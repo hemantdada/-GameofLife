@@ -1,0 +1,36 @@
+
+@import url('https://unpkg.com/bootstrap@3.3.7/dist/css/bootstrap.min.css');
+.mainContainer
+{
+  max-width:1000px;max-height:1000px;overflow: auto;
+}
+table {
+    border-collapse: collapse;
+  }
+  
+  table, th, td {
+    border: 2px solid black;
+  }
+td{
+  width:1px !important;
+  height:1px !important;
+  padding: 6px !important;
+}
+ .Active{
+ background-color: brown;
+  }
+
+  .NotActive{
+    background-color: white;
+     }
+
+
+     .ng-valid[required], .ng-valid.required  {
+      border-left: 5px solid #42A948; /* green */
+    }
+    
+    .ng-invalid:not(form)  {
+      border-left: 5px solid #a94442; /* red */
+    }
+
+    
