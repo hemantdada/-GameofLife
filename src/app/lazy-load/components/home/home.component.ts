@@ -54,8 +54,7 @@ export class HomeComponent implements OnInit {
   }
 
   public numberOnly(event: any): boolean {
-    // tslint:disable-next-line: typedef
-    const charCode = (event.which) ? event.which : event.keyCode;
+     const charCode:any = (event.which) ? event.which : event.keyCode;
     if (charCode > 31 && (charCode < 48 || charCode > 57)) {
       return false;
     }
@@ -74,15 +73,15 @@ export class HomeComponent implements OnInit {
   }
 
   public updateGridWithGameRules(): MyGrid {
-    // tslint:disable-next-line: typedef
-    const copyGrid = new MyGrid(this.gameOflife.mygrid.getRows().length, this.gameOflife.mygrid.getColumn().length);
+   
+    const copyGrid:MyGrid = new MyGrid(this.gameOflife.mygrid.getRows().length, this.gameOflife.mygrid.getColumn().length);
 
-    // tslint:disable-next-line: typedef
-    for (let row = 1; row < this.gameOflife.mygrid.getRows().length - 1; row++) {
-      // tslint:disable-next-line: typedef
-      for (let column = 1; column < this.gameOflife.mygrid.getColumn().length - 1; column++) {
-        // tslint:disable-next-line: typedef
-        const totalCells = this.gameOflife.mygrid.checkSurroundingsCells(row, column);
+   
+    for (let row:Number = 1; row < this.gameOflife.mygrid.getRows().length - 1; row++) {
+     
+      for (let column:Number = 1; column < this.gameOflife.mygrid.getColumn().length - 1; column++) {
+        
+        const totalCells :Number = this.gameOflife.mygrid.checkSurroundingsCells(row, column);
         switch (totalCells) {
           case 2:
             copyGrid.myarray[row][column] = this.gameOflife.mygrid.myarray[row][column];

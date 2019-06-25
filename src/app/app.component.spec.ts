@@ -7,8 +7,7 @@ import { CoreModule } from '@myApp/core';
 
 describe('AppComponent', () => {
 
-  // let component: AppComponent;
-  let fixture: ComponentFixture<AppComponent>;
+    let fixture: ComponentFixture<AppComponent>;
   let routingService: RoutingService;
 
   beforeEach(async(() => {
