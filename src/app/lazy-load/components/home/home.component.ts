@@ -24,7 +24,7 @@ export class HomeComponent implements OnInit {
     this.creater.initShapeType(this.gameOflife.patterns, this.gameOflife.mygrid);
     this.start(this.gameOflife.currentState);
   }
-
+z
   public Update(): void {
 
     this.gameOflife.currentState = 0;
@@ -34,6 +34,26 @@ export class HomeComponent implements OnInit {
     this.gameOflife.currentState = 1;
     this.start(this.gameOflife.currentState);
   }
+
+  public selectPattern(): void {
+    this.gameOflife.currentState = 0;
+    this.gameOflife.mygrid = new MyGrid(Number(this.gameOflife.rows), Number(this.gameOflife.columns));
+  }
+ public StartSelectedPattern(): void {
+  this.gameOflife.currentState = 1;
+  this.start(this.gameOflife.currentState);
+ }
+ public SavePattern(rowindex: any, colindex: any): void {
+  if(this.gameOflife.mygrid.myarray[rowindex][colindex] == 0) 
+  {
+    this.gameOflife.mygrid.myarray[rowindex][colindex]=1;
+  }
+  else{
+    this.gameOflife.mygrid.myarray[rowindex][colindex]=0;
+  }
+
+
+ }
 
   public StartClick(): void {
     this.gameOflife.currentState = 1;
@@ -75,13 +95,12 @@ export class HomeComponent implements OnInit {
   public updateGridWithGameRules(): MyGrid {
    
     const copyGrid:MyGrid = new MyGrid(this.gameOflife.mygrid.getRows().length, this.gameOflife.mygrid.getColumn().length);
-
-   
-    for (let row:Number = 1; row < this.gameOflife.mygrid.getRows().length - 1; row++) {
+  
+    for (let row:any = 0; row < this.gameOflife.mygrid.getRows().length - 1; row++) {
      
-      for (let column:Number = 1; column < this.gameOflife.mygrid.getColumn().length - 1; column++) {
+      for (let column:any = 0; column < this.gameOflife.mygrid.getColumn().length - 1; column++) {
         
-        const totalCells :Number = this.gameOflife.mygrid.checkSurroundingsCells(row, column);
+        const totalCells :any = this.gameOflife.mygrid.checkSurroundingsCells(row, column);
         switch (totalCells) {
           case 2:
             copyGrid.myarray[row][column] = this.gameOflife.mygrid.myarray[row][column];

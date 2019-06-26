@@ -9,8 +9,7 @@
       <tbody></tbody>
       <tr *ngFor="let a of this.gameOflife.mygrid.getRows(); let rowindex = index">
         <td *ngFor="let b of this.gameOflife.mygrid.getColumn(); let colindex = index"
-          [ngClass]="(gameOflife.mygrid.myarray[rowindex][colindex]!= 0)?'Active':'NotActive'">
-
+        (click)="SavePattern(rowindex,colindex)"  [ngClass]="(gameOflife.mygrid.myarray[rowindex][colindex]!= 0)?'Active':'NotActive'">
         </td>
       </tr>
       </tbody>
@@ -19,9 +18,17 @@
   <div class="row">
     <button type="submit" class="btn btn-success"
      [disabled]="this.gameOflife.currentState==1"
-      (click)="StartClick()">start</button>
+      (click)="StartClick()">start</button> &nbsp;&nbsp;&nbsp;&nbsp;
     <button type="submit" class="btn btn-success" [disabled]="this.gameOflife.currentState==0"
       (click)="Stopclick()">Stop</button>
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      <button type="submit" class="btn btn-success" 
+        (click)="selectPattern()">Select Pattern</button>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+
+        <button type="submit" class="btn btn-success" 
+        (click)="StartSelectedPattern()">Start With Selected Pattern</button>
+
   </div>
 
   <div class="row">
