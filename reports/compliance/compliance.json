@@ -1,0 +1,102 @@
+{
+  "lint": {
+    "status": "Unsure",
+    "comments": "",
+    "statistics": {
+      "count": 0
+    },
+    "executionTime": {
+      "start": "2019-6-26 08:05:40",
+      "end": "2019-6-26 08:05:52",
+      "total": 12.395
+    }
+  },
+  "test": {
+    "status": "Fail",
+    "comments": "Failed to meet the coverage threshold",
+    "statistics": {
+      "coverage": {
+        "statements": {
+          "percentage": 76.13,
+          "covered": 421,
+          "total": 553,
+          "skipped": 7
+        },
+        "branches": {
+          "percentage": 52.94,
+          "covered": 54,
+          "total": 102,
+          "skipped": 4
+        },
+        "functions": {
+          "percentage": 77.57,
+          "covered": 83,
+          "total": 107,
+          "skipped": 3
+        },
+        "lines": {
+          "percentage": 72.67,
+          "covered": 343,
+          "total": 472,
+          "skipped": 0
+        }
+      },
+      "summary": {
+        "success": 96,
+        "failed": 0,
+        "skipped": 0,
+        "total": 96,
+        "didNotExecute": 0
+      }
+    },
+    "executionTime": {
+      "start": "2019-6-26 08:05:40",
+      "end": "2019-6-26 08:06:25",
+      "total": 45.51
+    }
+  },
+  "jscpd": {
+    "status": "Pass",
+    "comments": "All good",
+    "statistics": {
+      "clones": 0,
+      "duplications": 0,
+      "files": 0,
+      "percentage": "0.00",
+      "lines": 1257
+    },
+    "executionTime": {
+      "start": "2019-6-26 08:05:40",
+      "end": "2019-6-26 08:05:53",
+      "total": 13.079
+    }
+  },
+  "accessibility": {
+    "status": "Pass",
+    "comments": "All good",
+    "statistics": {
+      "total": 69,
+      "errors": 10,
+      "warnings": 31,
+      "notices": 28
+    },
+    "executionTime": {
+      "start": "2019-6-26 08:05:40",
+      "end": "2019-6-26 08:05:55",
+      "total": 14.92
+    }
+  },
+  "build": {
+    "status": "Pass",
+    "comments": "All good",
+    "statistics": {
+      "fileCount": 16,
+      "totalSize": 1.743479
+    },
+    "executionTime": {
+      "start": "2019-6-26 08:05:40",
+      "end": "2019-6-26 08:07:05",
+      "total": 85.203
+    }
+  }
+}

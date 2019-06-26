@@ -1,0 +1,761 @@
+{
+  "global": {
+    "coverage": {
+      "statements": {
+        "percentage": 76.13,
+        "covered": 421,
+        "total": 553,
+        "skipped": 7
+      },
+      "branches": {
+        "percentage": 52.94,
+        "covered": 54,
+        "total": 102,
+        "skipped": 4
+      },
+      "functions": {
+        "percentage": 77.57,
+        "covered": 83,
+        "total": 107,
+        "skipped": 3
+      },
+      "lines": {
+        "percentage": 72.67,
+        "covered": 343,
+        "total": 472,
+        "skipped": 0
+      }
+    },
+    "failed": true
+  },
+  "files": [
+    {
+      "name": "/src/test.ts",
+      "failed": false,
+      "coverage": {
+        "statements": {
+          "percentage": 100,
+          "covered": 12,
+          "total": 12
+        },
+        "branches": {
+          "percentage": 100,
+          "covered": 0,
+          "total": 0
+        },
+        "functions": {
+          "percentage": 100,
+          "covered": 0,
+          "total": 0
+        },
+        "lines": {
+          "percentage": 100,
+          "covered": 12,
+          "total": 12
+        }
+      }
+    },
+    {
+      "name": "/src/app/app-routing.module.ts",
+      "failed": false,
+      "coverage": {
+        "statements": {
+          "percentage": 100,
+          "covered": 8,
+          "total": 8
+        },
+        "branches": {
+          "percentage": 100,
+          "covered": 0,
+          "total": 0
+        },
+        "functions": {
+          "percentage": 100,
+          "covered": 1,
+          "total": 1
+        },
+        "lines": {
+          "percentage": 100,
+          "covered": 5,
+          "total": 5
+        }
+      }
+    },
+    {
+      "name": "/src/app/app.component.ts",
+      "failed": false,
+      "coverage": {
+        "statements": {
+          "percentage": 100,
+          "covered": 10,
+          "total": 10
+        },
+        "branches": {
+          "percentage": 100,
+          "covered": 0,
+          "total": 0
+        },
+        "functions": {
+          "percentage": 100,
+          "covered": 3,
+          "total": 3
+        },
+        "lines": {
+          "percentage": 100,
+          "covered": 7,
+          "total": 7
+        }
+      }
+    },
+    {
+      "name": "/src/app/app.module.ts",
+      "failed": false,
+      "coverage": {
+        "statements": {
+          "percentage": 100,
+          "covered": 12,
+          "total": 12
+        },
+        "branches": {
+          "percentage": 100,
+          "covered": 0,
+          "total": 0
+        },
+        "functions": {
+          "percentage": 100,
+          "covered": 1,
+          "total": 1
+        },
+        "lines": {
+          "percentage": 100,
+          "covered": 9,
+          "total": 9
+        }
+      }
+    },
+    {
+      "name": "/src/app/core/components/home/home.component.ts",
+      "failed": true,
+      "coverage": {
+        "statements": {
+          "percentage": 85.71,
+          "covered": 6,
+          "total": 7
+        },
+        "branches": {
+          "percentage": 100,
+          "covered": 0,
+          "total": 0
+        },
+        "functions": {
+          "percentage": 50,
+          "covered": 1,
+          "total": 2
+        },
+        "lines": {
+          "percentage": 80,
+          "covered": 4,
+          "total": 5
+        }
+      }
+    },
+    {
+      "name": "/src/app/core/components/navbar/navbar.component.ts",
+      "failed": false,
+      "coverage": {
+        "statements": {
+          "percentage": 100,
+          "covered": 5,
+          "total": 5
+        },
+        "branches": {
+          "percentage": 100,
+          "covered": 0,
+          "total": 0
+        },
+        "functions": {
+          "percentage": 100,
+          "covered": 1,
+          "total": 1
+        },
+        "lines": {
+          "percentage": 100,
+          "covered": 3,
+          "total": 3
+        }
+      }
+    },
+    {
+      "name": "/src/app/core/components/spinner/spinner.component.ts",
+      "failed": false,
+      "coverage": {
+        "statements": {
+          "percentage": 100,
+          "covered": 16,
+          "total": 16
+        },
+        "branches": {
+          "percentage": 100,
+          "covered": 2,
+          "total": 2
+        },
+        "functions": {
+          "percentage": 100,
+          "covered": 5,
+          "total": 5
+        },
+        "lines": {
+          "percentage": 100,
+          "covered": 12,
+          "total": 12
+        }
+      }
+    },
+    {
+      "name": "/src/app/core/components/spinner/spinner.service.ts",
+      "failed": false,
+      "coverage": {
+        "statements": {
+          "percentage": 100,
+          "covered": 24,
+          "total": 24
+        },
+        "branches": {
+          "percentage": 100,
+          "covered": 10,
+          "total": 10
+        },
+        "functions": {
+          "percentage": 100,
+          "covered": 5,
+          "total": 5
+        },
+        "lines": {
+          "percentage": 100,
+          "covered": 22,
+          "total": 22
+        }
+      }
+    },
+    {
+      "name": "/src/app/core/core.module.ts",
+      "failed": false,
+      "coverage": {
+        "statements": {
+          "percentage": 100,
+          "covered": 15,
+          "total": 15
+        },
+        "branches": {
+          "percentage": 100,
+          "covered": 0,
+          "total": 0
+        },
+        "functions": {
+          "percentage": 100,
+          "covered": 2,
+          "total": 2
+        },
+        "lines": {
+          "percentage": 100,
+          "covered": 13,
+          "total": 13
+        }
+      }
+    },
+    {
+      "name": "/src/app/core/index.ts",
+      "failed": false,
+      "coverage": {
+        "statements": {
+          "percentage": 100,
+          "covered": 12,
+          "total": 12
+        },
+        "branches": {
+          "percentage": 100,
+          "covered": 0,
+          "total": 0
+        },
+        "functions": {
+          "percentage": 100,
+          "covered": 0,
+          "total": 0
+        },
+        "lines": {
+          "percentage": 100,
+          "covered": 6,
+          "total": 6
+        }
+      }
+    },
+    {
+      "name": "/src/app/core/interceptors/spinner.interceptor.ts",
+      "failed": false,
+      "coverage": {
+        "statements": {
+          "percentage": 100,
+          "covered": 22,
+          "total": 22
+        },
+        "branches": {
+          "percentage": 100,
+          "covered": 4,
+          "total": 4
+        },
+        "functions": {
+          "percentage": 100,
+          "covered": 5,
+          "total": 5
+        },
+        "lines": {
+          "percentage": 100,
+          "covered": 18,
+          "total": 18
+        }
+      }
+    },
+    {
+      "name": "/src/app/lazy-load/components/home/home.component.ts",
+      "failed": true,
+      "coverage": {
+        "statements": {
+          "percentage": 29.41,
+          "covered": 20,
+          "total": 68
+        },
+        "branches": {
+          "percentage": 0,
+          "covered": 0,
+          "total": 19
+        },
+        "functions": {
+          "percentage": 7.14,
+          "covered": 1,
+          "total": 14
+        },
+        "lines": {
+          "percentage": 27.69,
+          "covered": 18,
+          "total": 65
+        }
+      }
+    },
+    {
+      "name": "/src/app/lazy-load/index.ts",
+      "failed": false,
+      "coverage": {
+        "statements": {
+          "percentage": 100,
+          "covered": 4,
+          "total": 4
+        },
+        "branches": {
+          "percentage": 100,
+          "covered": 0,
+          "total": 0
+        },
+        "functions": {
+          "percentage": 100,
+          "covered": 0,
+          "total": 0
+        },
+        "lines": {
+          "percentage": 100,
+          "covered": 2,
+          "total": 2
+        }
+      }
+    },
+    {
+      "name": "/src/app/lazy-load/lazy-load-routing.module.ts",
+      "failed": false,
+      "coverage": {
+        "statements": {
+          "percentage": 100,
+          "covered": 8,
+          "total": 8
+        },
+        "branches": {
+          "percentage": 100,
+          "covered": 0,
+          "total": 0
+        },
+        "functions": {
+          "percentage": 100,
+          "covered": 1,
+          "total": 1
+        },
+        "lines": {
+          "percentage": 100,
+          "covered": 5,
+          "total": 5
+        }
+      }
+    },
+    {
+      "name": "/src/app/lazy-load/lazy-load.module.ts",
+      "failed": false,
+      "coverage": {
+        "statements": {
+          "percentage": 100,
+          "covered": 10,
+          "total": 10
+        },
+        "branches": {
+          "percentage": 100,
+          "covered": 0,
+          "total": 0
+        },
+        "functions": {
+          "percentage": 100,
+          "covered": 1,
+          "total": 1
+        },
+        "lines": {
+          "percentage": 100,
+          "covered": 7,
+          "total": 7
+        }
+      }
+    },
+    {
+      "name": "/src/app/shared/common/creater.ts",
+      "failed": true,
+      "coverage": {
+        "statements": {
+          "percentage": 11.86,
+          "covered": 7,
+          "total": 59
+        },
+        "branches": {
+          "percentage": 0,
+          "covered": 0,
+          "total": 5
+        },
+        "functions": {
+          "percentage": 16.67,
+          "covered": 1,
+          "total": 6
+        },
+        "lines": {
+          "percentage": 10.34,
+          "covered": 6,
+          "total": 58
+        }
+      }
+    },
+    {
+      "name": "/src/app/shared/index.ts",
+      "failed": false,
+      "coverage": {
+        "statements": {
+          "percentage": 100,
+          "covered": 16,
+          "total": 16
+        },
+        "branches": {
+          "percentage": 100,
+          "covered": 0,
+          "total": 0
+        },
+        "functions": {
+          "percentage": 100,
+          "covered": 0,
+          "total": 0
+        },
+        "lines": {
+          "percentage": 100,
+          "covered": 8,
+          "total": 8
+        }
+      }
+    },
+    {
+      "name": "/src/app/shared/model/game-of-life/game-of-life.ts",
+      "failed": true,
+      "coverage": {
+        "statements": {
+          "percentage": 33.33,
+          "covered": 3,
+          "total": 9
+        },
+        "branches": {
+          "percentage": 100,
+          "covered": 0,
+          "total": 0
+        },
+        "functions": {
+          "percentage": 100,
+          "covered": 1,
+          "total": 1
+        },
+        "lines": {
+          "percentage": 25,
+          "covered": 2,
+          "total": 8
+        }
+      }
+    },
+    {
+      "name": "/src/app/shared/model/mygrid/my-grid.ts",
+      "failed": true,
+      "coverage": {
+        "statements": {
+          "percentage": 24.24,
+          "covered": 8,
+          "total": 33
+        },
+        "branches": {
+          "percentage": 0,
+          "covered": 0,
+          "total": 24
+        },
+        "functions": {
+          "percentage": 16.67,
+          "covered": 1,
+          "total": 6
+        },
+        "lines": {
+          "percentage": 23.33,
+          "covered": 7,
+          "total": 30
+        }
+      }
+    },
+    {
+      "name": "/src/app/shared/pipes/sanitize-html/sanitize-html.pipe.ts",
+      "failed": false,
+      "coverage": {
+        "statements": {
+          "percentage": 100,
+          "covered": 10,
+          "total": 10
+        },
+        "branches": {
+          "percentage": 100,
+          "covered": 0,
+          "total": 0
+        },
+        "functions": {
+          "percentage": 100,
+          "covered": 3,
+          "total": 3
+        },
+        "lines": {
+          "percentage": 100,
+          "covered": 7,
+          "total": 7
+        }
+      }
+    },
+    {
+      "name": "/src/app/shared/pipes/trust-html/trust-html.pipe.ts",
+      "failed": false,
+      "coverage": {
+        "statements": {
+          "percentage": 100,
+          "covered": 10,
+          "total": 10
+        },
+        "branches": {
+          "percentage": 100,
+          "covered": 0,
+          "total": 0
+        },
+        "functions": {
+          "percentage": 100,
+          "covered": 3,
+          "total": 3
+        },
+        "lines": {
+          "percentage": 100,
+          "covered": 7,
+          "total": 7
+        }
+      }
+    },
+    {
+      "name": "/src/app/shared/pipes/trust-resource-url/trust-resource-url.pipe.ts",
+      "failed": false,
+      "coverage": {
+        "statements": {
+          "percentage": 100,
+          "covered": 10,
+          "total": 10
+        },
+        "branches": {
+          "percentage": 100,
+          "covered": 0,
+          "total": 0
+        },
+        "functions": {
+          "percentage": 100,
+          "covered": 3,
+          "total": 3
+        },
+        "lines": {
+          "percentage": 100,
+          "covered": 7,
+          "total": 7
+        }
+      }
+    },
+    {
+      "name": "/src/app/shared/services/http-error-handler/http-error-handler.service.ts",
+      "failed": false,
+      "coverage": {
+        "statements": {
+          "percentage": 100,
+          "covered": 12,
+          "total": 12
+        },
+        "branches": {
+          "percentage": 100,
+          "covered": 3,
+          "total": 3
+        },
+        "functions": {
+          "percentage": 100,
+          "covered": 2,
+          "total": 2
+        },
+        "lines": {
+          "percentage": 100,
+          "covered": 10,
+          "total": 10
+        }
+      }
+    },
+    {
+      "name": "/src/app/shared/services/http/http.service.ts",
+      "failed": false,
+      "coverage": {
+        "statements": {
+          "percentage": 100,
+          "covered": 93,
+          "total": 93
+        },
+        "branches": {
+          "percentage": 100,
+          "covered": 29,
+          "total": 29
+        },
+        "functions": {
+          "percentage": 100,
+          "covered": 25,
+          "total": 25
+        },
+        "lines": {
+          "percentage": 100,
+          "covered": 87,
+          "total": 87
+        }
+      }
+    },
+    {
+      "name": "/src/app/shared/services/routing/routing.service.ts",
+      "failed": false,
+      "coverage": {
+        "statements": {
+          "percentage": 100,
+          "covered": 34,
+          "total": 34
+        },
+        "branches": {
+          "percentage": 100,
+          "covered": 2,
+          "total": 2
+        },
+        "functions": {
+          "percentage": 100,
+          "covered": 10,
+          "total": 10
+        },
+        "lines": {
+          "percentage": 100,
+          "covered": 29,
+          "total": 29
+        }
+      }
+    },
+    {
+      "name": "/src/app/shared/services/window/window.service.ts",
+      "failed": false,
+      "coverage": {
+        "statements": {
+          "percentage": 100,
+          "covered": 15,
+          "total": 15
+        },
+        "branches": {
+          "percentage": 100,
+          "covered": 4,
+          "total": 4
+        },
+        "functions": {
+          "percentage": 100,
+          "covered": 5,
+          "total": 5
+        },
+        "lines": {
+          "percentage": 100,
+          "covered": 13,
+          "total": 13
+        }
+      }
+    },
+    {
+      "name": "/src/app/shared/shared.module.ts",
+      "failed": false,
+      "coverage": {
+        "statements": {
+          "percentage": 100,
+          "covered": 18,
+          "total": 18
+        },
+        "branches": {
+          "percentage": 100,
+          "covered": 0,
+          "total": 0
+        },
+        "functions": {
+          "percentage": 100,
+          "covered": 2,
+          "total": 2
+        },
+        "lines": {
+          "percentage": 100,
+          "covered": 16,
+          "total": 16
+        }
+      }
+    },
+    {
+      "name": "/src/environments/environment.ts",
+      "failed": false,
+      "coverage": {
+        "statements": {
+          "percentage": 100,
+          "covered": 1,
+          "total": 1
+        },
+        "branches": {
+          "percentage": 100,
+          "covered": 0,
+          "total": 0
+        },
+        "functions": {
+          "percentage": 100,
+          "covered": 0,
+          "total": 0
+        },
+        "lines": {
+          "percentage": 100,
+          "covered": 1,
+          "total": 1
+        }
+      }
+    }
+  ]
+}

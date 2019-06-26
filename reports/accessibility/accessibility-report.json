@@ -1,0 +1,758 @@
+{
+  "errors": 10,
+  "warnings": 31,
+  "notices": 28,
+  "files": [
+    {
+      "index": 1,
+      "name": "F:/TCS Test/-GameofLife/src/app/app.component.html",
+      "errors": 0,
+      "warnings": 0,
+      "notices": 0,
+      "errorDetails": []
+    },
+    {
+      "index": 2,
+      "name": "F:/TCS Test/-GameofLife/src/app/core/components/home/home.component.html",
+      "errors": 0,
+      "warnings": 3,
+      "notices": 0,
+      "errorDetails": [
+        {
+          "issue": "WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.BgImage",
+          "description": "This element's text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 7:1.",
+          "element": "<h1>\n    Welcome to Game of Life!\n  </h1>",
+          "severity": "WARNING",
+          "position": {
+            "lineNumber": 1,
+            "columnNumber": 0
+          }
+        },
+        {
+          "issue": "WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.BgImage",
+          "description": "This element's text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 7:1.",
+          "element": "<p>This is the Home page</p>",
+          "severity": "WARNING",
+          "position": {
+            "lineNumber": 7,
+            "columnNumber": 2
+          }
+        },
+        {
+          "issue": "WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.BgImage",
+          "description": "This element's text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 7:1.",
+          "element": "<h2>Please click on 'lazy loaded' in the Nav bar to load the Game of Life</h2>",
+          "severity": "WARNING",
+          "position": {
+            "lineNumber": 8,
+            "columnNumber": 2
+          }
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "name": "F:/TCS Test/-GameofLife/src/app/core/components/navbar/navbar.component.html",
+      "errors": 0,
+      "warnings": 8,
+      "notices": 4,
+      "errorDetails": [
+        {
+          "issue": "WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.BgImage",
+          "description": "This element's text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 7:1.",
+          "element": "<a class=\"navbar-brand\" routerlink=\"/\">Angular-6-Starter</a>",
+          "severity": "WARNING",
+          "position": {
+            "lineNumber": 1,
+            "columnNumber": 0
+          }
+        },
+        {
+          "issue": "WCAG2AAA.Principle4.Guideline4_1.4_1_2.H91.A.Placeholder",
+          "description": "Anchor element found with link content, but no href, ID or name attribute has been supplied.",
+          "element": "<a class=\"navbar-brand\" routerlink=\"/\">Angular-6-Starter</a>",
+          "severity": "WARNING",
+          "position": {
+            "lineNumber": 1,
+            "columnNumber": 0
+          }
+        },
+        {
+          "issue": "WCAG2AAA.Principle2.Guideline2_4.2_4_9.H30",
+          "description": "Check that text of the link describes the purpose of the link.",
+          "element": "<a class=\"navbar-brand\" routerlink=\"/\">Angular-6-Starter</a>",
+          "severity": "NOTICE",
+          "position": {
+            "lineNumber": 1,
+            "columnNumber": 0
+          }
+        },
+        {
+          "issue": "WCAG2AAA.Principle3.Guideline3_2.3_2_1.G107",
+          "description": "Check that a change of context does not occur when this input field receives focus.",
+          "element": "<button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n    <span class=\"navbar-toggler-icon\"></span>\n  </button>",
+          "severity": "NOTICE",
+          "position": {
+            "lineNumber": 1,
+            "columnNumber": 0
+          }
+        },
+        {
+          "issue": "WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.BgImage",
+          "description": "This element's text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 7:1.",
+          "element": "<a class=\"nav-link\" routerlink=\"/\">Home<span class=\"sr-only\">(current)</span></a>",
+          "severity": "WARNING",
+          "position": {
+            "lineNumber": 1,
+            "columnNumber": 0
+          }
+        },
+        {
+          "issue": "WCAG2AAA.Principle4.Guideline4_1.4_1_2.H91.A.Placeholder",
+          "description": "Anchor element found with link content, but no href, ID or name attribute has been supplied.",
+          "element": "<a class=\"nav-link\" routerlink=\"/\">Home<span class=\"sr-only\">(current)</span></a>",
+          "severity": "WARNING",
+          "position": {
+            "lineNumber": 1,
+            "columnNumber": 0
+          }
+        },
+        {
+          "issue": "WCAG2AAA.Principle2.Guideline2_4.2_4_9.H30",
+          "description": "Check that text of the link describes the purpose of the link.",
+          "element": "<a class=\"nav-link\" routerlink=\"/\">Home<span class=\"sr-only\">(current)</span></a>",
+          "severity": "NOTICE",
+          "position": {
+            "lineNumber": 1,
+            "columnNumber": 0
+          }
+        },
+        {
+          "issue": "WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.BgImage",
+          "description": "This element's text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 7:1.",
+          "element": "<span class=\"sr-only\">(current)</span>",
+          "severity": "WARNING",
+          "position": {
+            "lineNumber": 12,
+            "columnNumber": 47
+          }
+        },
+        {
+          "issue": "WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.BgImage",
+          "description": "This element's text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 7:1.",
+          "element": "<a class=\"nav-link\" routerlink=\"/lazy-load\">Lazy Loaded<span class=\"sr-only\">(current)</span></a>",
+          "severity": "WARNING",
+          "position": {
+            "lineNumber": 1,
+            "columnNumber": 0
+          }
+        },
+        {
+          "issue": "WCAG2AAA.Principle4.Guideline4_1.4_1_2.H91.A.Placeholder",
+          "description": "Anchor element found with link content, but no href, ID or name attribute has been supplied.",
+          "element": "<a class=\"nav-link\" routerlink=\"/lazy-load\">Lazy Loaded<span class=\"sr-only\">(current)</span></a>",
+          "severity": "WARNING",
+          "position": {
+            "lineNumber": 1,
+            "columnNumber": 0
+          }
+        },
+        {
+          "issue": "WCAG2AAA.Principle2.Guideline2_4.2_4_9.H30",
+          "description": "Check that text of the link describes the purpose of the link.",
+          "element": "<a class=\"nav-link\" routerlink=\"/lazy-load\">Lazy Loaded<span class=\"sr-only\">(current)</span></a>",
+          "severity": "NOTICE",
+          "position": {
+            "lineNumber": 1,
+            "columnNumber": 0
+          }
+        },
+        {
+          "issue": "WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.BgImage",
+          "description": "This element's text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 7:1.",
+          "element": "<span class=\"sr-only\">(current)</span>",
+          "severity": "WARNING",
+          "position": {
+            "lineNumber": 12,
+            "columnNumber": 47
+          }
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "name": "F:/TCS Test/-GameofLife/src/app/core/components/spinner/spinner.component.html",
+      "errors": 0,
+      "warnings": 0,
+      "notices": 0,
+      "errorDetails": []
+    },
+    {
+      "index": 5,
+      "name": "F:/TCS Test/-GameofLife/src/app/lazy-load/components/home/home.component.html",
+      "errors": 10,
+      "warnings": 19,
+      "notices": 22,
+      "errorDetails": [
+        {
+          "issue": "WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.BgImage",
+          "description": "This element's text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 7:1.",
+          "element": "<h1>Game Of Life </h1>",
+          "severity": "WARNING",
+          "position": {
+            "lineNumber": 2,
+            "columnNumber": 0
+          }
+        },
+        {
+          "issue": "WCAG2AAA.Principle1.Guideline1_3.1_3_1.LayoutTable",
+          "description": "This table appears to be a layout table. If it is meant to instead be a data table, ensure header cells are identified using th elements.",
+          "element": "<table class=\"table table-hover\" *ngif=\"this.gameOflife.mygrid != undefined\">\n      <thead>\n      </thead>\n      <tbody></tbody>\n      <tbody><tr *ngfor=\"let a of this.gameOflife.mygrid.getRows(); let rowindex = index\">\n        <td *ngfor=\"let b of this.gameOflife.mygrid.getColumn(); let colindex = index\" (click)=\"SavePattern(rowindex,colindex)\" [ngclass]=\"(gameOflife.mygrid.myarray[rowindex][colindex]!= 0)?'Active':'NotActive'\">\n        </td>\n      </tr>\n      </tbody>\n    </table>",
+          "severity": "NOTICE",
+          "position": {
+            "lineNumber": 1,
+            "columnNumber": 0
+          }
+        },
+        {
+          "issue": "WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.BgImage",
+          "description": "This element's text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 7:1.",
+          "element": "<button type=\"submit\" class=\"btn btn-success\" [disabled]=\"this.gameOflife.currentState==1\" (click)=\"StartClick()\">start</button>",
+          "severity": "WARNING",
+          "position": {
+            "lineNumber": 1,
+            "columnNumber": 0
+          }
+        },
+        {
+          "issue": "WCAG2AAA.Principle3.Guideline3_2.3_2_1.G107",
+          "description": "Check that a change of context does not occur when this input field receives focus.",
+          "element": "<button type=\"submit\" class=\"btn btn-success\" [disabled]=\"this.gameOflife.currentState==1\" (click)=\"StartClick()\">start</button>",
+          "severity": "NOTICE",
+          "position": {
+            "lineNumber": 1,
+            "columnNumber": 0
+          }
+        },
+        {
+          "issue": "WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.BgImage",
+          "description": "This element's text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 7:1.",
+          "element": "<button type=\"submit\" class=\"btn btn-success\" [disabled]=\"this.gameOflife.currentState==0\" (click)=\"Stopclick()\">Stop</button>",
+          "severity": "WARNING",
+          "position": {
+            "lineNumber": 1,
+            "columnNumber": 0
+          }
+        },
+        {
+          "issue": "WCAG2AAA.Principle3.Guideline3_2.3_2_1.G107",
+          "description": "Check that a change of context does not occur when this input field receives focus.",
+          "element": "<button type=\"submit\" class=\"btn btn-success\" [disabled]=\"this.gameOflife.currentState==0\" (click)=\"Stopclick()\">Stop</button>",
+          "severity": "NOTICE",
+          "position": {
+            "lineNumber": 1,
+            "columnNumber": 0
+          }
+        },
+        {
+          "issue": "WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.BgImage",
+          "description": "This element's text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 7:1.",
+          "element": "<button type=\"submit\" class=\"btn btn-success\" (click)=\"selectPattern()\">Select Pattern</button>",
+          "severity": "WARNING",
+          "position": {
+            "lineNumber": 1,
+            "columnNumber": 0
+          }
+        },
+        {
+          "issue": "WCAG2AAA.Principle3.Guideline3_2.3_2_1.G107",
+          "description": "Check that a change of context does not occur when this input field receives focus.",
+          "element": "<button type=\"submit\" class=\"btn btn-success\" (click)=\"selectPattern()\">Select Pattern</button>",
+          "severity": "NOTICE",
+          "position": {
+            "lineNumber": 1,
+            "columnNumber": 0
+          }
+        },
+        {
+          "issue": "WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.BgImage",
+          "description": "This element's text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 7:1.",
+          "element": "<button type=\"submit\" class=\"btn btn-success\" (click)=\"StartSelectedPattern()\">Start With Selected Pattern</button>",
+          "severity": "WARNING",
+          "position": {
+            "lineNumber": 1,
+            "columnNumber": 0
+          }
+        },
+        {
+          "issue": "WCAG2AAA.Principle3.Guideline3_2.3_2_1.G107",
+          "description": "Check that a change of context does not occur when this input field receives focus.",
+          "element": "<button type=\"submit\" class=\"btn btn-success\" (click)=\"StartSelectedPattern()\">Start With Selected Pattern</button>",
+          "severity": "NOTICE",
+          "position": {
+            "lineNumber": 1,
+            "columnNumber": 0
+          }
+        },
+        {
+          "issue": "WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.BgImage",
+          "description": "This element's text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 7:1.",
+          "element": "<h1>Select other Pattern </h1>",
+          "severity": "WARNING",
+          "position": {
+            "lineNumber": 36,
+            "columnNumber": 6
+          }
+        },
+        {
+          "issue": "WCAG2AAA.Principle1.Guideline1_3.1_3_1.H71.SameName",
+          "description": "If these radio buttons or check boxes require a further group-level description, they should be contained within a fieldset element.",
+          "element": "<form id=\"loadpatter\" name=\"loadpatter\" #frmloadpatter=\"ngForm\" novalidate=\"\">\n        <div class=\"form-group\"> <input type=\"radio\" name=\"options\" [value]=\"false\" value=\"0\" [(ngmodel)]=\"gameOflife.patterns\">\n          MyShape\n          <input type=\"radio\" name=\"options\" [value]=\"true\" [(ngmodel)]=\"gameOflife.patterns\"> random\n        </div>\n        <div class=\"form-group\">\n          <button type=\"submit\" class=\"btn btn-success\" (click)=\"LoadPattern()\">Load Pattern</button>\n        </div>\n      </form>",
+          "severity": "WARNING",
+          "position": {
+            "lineNumber": 1,
+            "columnNumber": 0
+          }
+        },
+        {
+          "issue": "WCAG2AAA.Principle3.Guideline3_3.3_3_1.G83,G84,G85",
+          "description": "If an input error is automatically detected in this form, check that the item(s) in error are identified and the error(s) are described to the user in text.",
+          "element": "<form id=\"loadpatter\" name=\"loadpatter\" #frmloadpatter=\"ngForm\" novalidate=\"\">\n        <div class=\"form-group\"> <input type=\"radio\" name=\"options\" [value]=\"false\" value=\"0\" [(ngmodel)]=\"gameOflife.patterns\">\n          MyShape\n          <input type=\"radio\" name=\"options\" [value]=\"true\" [(ngmodel)]=\"gameOflife.patterns\"> random\n        </div>\n        <div class=\"form-group\">\n          <button type=\"submit\" class=\"btn btn-success\" (click)=\"LoadPattern()\">Load Pattern</button>\n        </div>\n      </form>",
+          "severity": "NOTICE",
+          "position": {
+            "lineNumber": 1,
+            "columnNumber": 0
+          }
+        },
+        {
+          "issue": "WCAG2AAA.Principle3.Guideline3_3.3_3_2.G131,G89,G184,H90",
+          "description": "Check that descriptive labels or instructions (including for required fields) are provided for user input in this form.",
+          "element": "<form id=\"loadpatter\" name=\"loadpatter\" #frmloadpatter=\"ngForm\" novalidate=\"\">\n        <div class=\"form-group\"> <input type=\"radio\" name=\"options\" [value]=\"false\" value=\"0\" [(ngmodel)]=\"gameOflife.patterns\">\n          MyShape\n          <input type=\"radio\" name=\"options\" [value]=\"true\" [(ngmodel)]=\"gameOflife.patterns\"> random\n        </div>\n        <div class=\"form-group\">\n          <button type=\"submit\" class=\"btn btn-success\" (click)=\"LoadPattern()\">Load Pattern</button>\n        </div>\n      </form>",
+          "severity": "NOTICE",
+          "position": {
+            "lineNumber": 1,
+            "columnNumber": 0
+          }
+        },
+        {
+          "issue": "WCAG2AAA.Principle3.Guideline3_3.3_3_3.G177",
+          "description": "Check that this form provides suggested corrections to errors in user input, unless it would jeopardize the security or purpose of the content.",
+          "element": "<form id=\"loadpatter\" name=\"loadpatter\" #frmloadpatter=\"ngForm\" novalidate=\"\">\n        <div class=\"form-group\"> <input type=\"radio\" name=\"options\" [value]=\"false\" value=\"0\" [(ngmodel)]=\"gameOflife.patterns\">\n          MyShape\n          <input type=\"radio\" name=\"options\" [value]=\"true\" [(ngmodel)]=\"gameOflife.patterns\"> random\n        </div>\n        <div class=\"form-group\">\n          <button type=\"submit\" class=\"btn btn-success\" (click)=\"LoadPattern()\">Load Pattern</button>\n        </div>\n      </form>",
+          "severity": "NOTICE",
+          "position": {
+            "lineNumber": 1,
+            "columnNumber": 0
+          }
+        },
+        {
+          "issue": "WCAG2AAA.Principle3.Guideline3_3.3_3_5.G71,G184,G193",
+          "description": "Check that context-sensitive help is available for this form, at a Web-page and/or control level.",
+          "element": "<form id=\"loadpatter\" name=\"loadpatter\" #frmloadpatter=\"ngForm\" novalidate=\"\">\n        <div class=\"form-group\"> <input type=\"radio\" name=\"options\" [value]=\"false\" value=\"0\" [(ngmodel)]=\"gameOflife.patterns\">\n          MyShape\n          <input type=\"radio\" name=\"options\" [value]=\"true\" [(ngmodel)]=\"gameOflife.patterns\"> random\n        </div>\n        <div class=\"form-group\">\n          <button type=\"submit\" class=\"btn btn-success\" (click)=\"LoadPattern()\">Load Pattern</button>\n        </div>\n      </form>",
+          "severity": "NOTICE",
+          "position": {
+            "lineNumber": 1,
+            "columnNumber": 0
+          }
+        },
+        {
+          "issue": "WCAG2AAA.Principle3.Guideline3_3.3_3_6.G98,G99,G155,G164,G168.AllForms",
+          "description": "Check that submissions to this form are either reversible, checked for input errors, and/or confirmed by the user.",
+          "element": "<form id=\"loadpatter\" name=\"loadpatter\" #frmloadpatter=\"ngForm\" novalidate=\"\">\n        <div class=\"form-group\"> <input type=\"radio\" name=\"options\" [value]=\"false\" value=\"0\" [(ngmodel)]=\"gameOflife.patterns\">\n          MyShape\n          <input type=\"radio\" name=\"options\" [value]=\"true\" [(ngmodel)]=\"gameOflife.patterns\"> random\n        </div>\n        <div class=\"form-group\">\n          <button type=\"submit\" class=\"btn btn-success\" (click)=\"LoadPattern()\">Load Pattern</button>\n        </div>\n      </form>",
+          "severity": "NOTICE",
+          "position": {
+            "lineNumber": 1,
+            "columnNumber": 0
+          }
+        },
+        {
+          "issue": "WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.BgImage",
+          "description": "This element's text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 7:1.",
+          "element": "<div class=\"form-group\"> <input type=\"radio\" name=\"options\" [value]=\"false\" value=\"0\" [(ngmodel)]=\"gameOflife.patterns\">\n          MyShape\n          <input type=\"radio\" name=\"options\" [value]=\"true\" [(ngmodel)]=\"gameOflife.patterns\"> random\n        </div>",
+          "severity": "WARNING",
+          "position": {
+            "lineNumber": 1,
+            "columnNumber": 0
+          }
+        },
+        {
+          "issue": "WCAG2AAA.Principle4.Guideline4_1.4_1_2.H91.InputRadio.Name",
+          "description": "This radio input element does not have a name available to an accessibility API. Valid names are: label element, title attribute, aria-label attribute, aria-labelledby attribute.",
+          "element": "<input type=\"radio\" name=\"options\" [value]=\"false\" value=\"0\" [(ngmodel)]=\"gameOflife.patterns\">",
+          "severity": "ERROR",
+          "position": {
+            "lineNumber": 1,
+            "columnNumber": 0
+          }
+        },
+        {
+          "issue": "WCAG2AAA.Principle1.Guideline1_3.1_3_1.F68",
+          "description": "This form field should be labelled in some way. Use the label element (either with a \"for\" attribute or wrapped around the form field), or \"title\", \"aria-label\" or \"aria-labelledby\" attributes as appropriate.",
+          "element": "<input type=\"radio\" name=\"options\" [value]=\"false\" value=\"0\" [(ngmodel)]=\"gameOflife.patterns\">",
+          "severity": "ERROR",
+          "position": {
+            "lineNumber": 1,
+            "columnNumber": 0
+          }
+        },
+        {
+          "issue": "WCAG2AAA.Principle3.Guideline3_2.3_2_1.G107",
+          "description": "Check that a change of context does not occur when this input field receives focus.",
+          "element": "<input type=\"radio\" name=\"options\" [value]=\"false\" value=\"0\" [(ngmodel)]=\"gameOflife.patterns\">",
+          "severity": "NOTICE",
+          "position": {
+            "lineNumber": 1,
+            "columnNumber": 0
+          }
+        },
+        {
+          "issue": "WCAG2AAA.Principle4.Guideline4_1.4_1_2.H91.InputRadio.Name",
+          "description": "This radio input element does not have a name available to an accessibility API. Valid names are: label element, title attribute, aria-label attribute, aria-labelledby attribute.",
+          "element": "<input type=\"radio\" name=\"options\" [value]=\"true\" [(ngmodel)]=\"gameOflife.patterns\">",
+          "severity": "ERROR",
+          "position": {
+            "lineNumber": 1,
+            "columnNumber": 0
+          }
+        },
+        {
+          "issue": "WCAG2AAA.Principle1.Guideline1_3.1_3_1.F68",
+          "description": "This form field should be labelled in some way. Use the label element (either with a \"for\" attribute or wrapped around the form field), or \"title\", \"aria-label\" or \"aria-labelledby\" attributes as appropriate.",
+          "element": "<input type=\"radio\" name=\"options\" [value]=\"true\" [(ngmodel)]=\"gameOflife.patterns\">",
+          "severity": "ERROR",
+          "position": {
+            "lineNumber": 1,
+            "columnNumber": 0
+          }
+        },
+        {
+          "issue": "WCAG2AAA.Principle3.Guideline3_2.3_2_1.G107",
+          "description": "Check that a change of context does not occur when this input field receives focus.",
+          "element": "<input type=\"radio\" name=\"options\" [value]=\"true\" [(ngmodel)]=\"gameOflife.patterns\">",
+          "severity": "NOTICE",
+          "position": {
+            "lineNumber": 1,
+            "columnNumber": 0
+          }
+        },
+        {
+          "issue": "WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.BgImage",
+          "description": "This element's text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 7:1.",
+          "element": "<button type=\"submit\" class=\"btn btn-success\" (click)=\"LoadPattern()\">Load Pattern</button>",
+          "severity": "WARNING",
+          "position": {
+            "lineNumber": 46,
+            "columnNumber": 10
+          }
+        },
+        {
+          "issue": "WCAG2AAA.Principle3.Guideline3_2.3_2_1.G107",
+          "description": "Check that a change of context does not occur when this input field receives focus.",
+          "element": "<button type=\"submit\" class=\"btn btn-success\" (click)=\"LoadPattern()\">Load Pattern</button>",
+          "severity": "NOTICE",
+          "position": {
+            "lineNumber": 46,
+            "columnNumber": 10
+          }
+        },
+        {
+          "issue": "WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.BgImage",
+          "description": "This element's text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 7:1.",
+          "element": "<h1>Game Of Life</h1>",
+          "severity": "WARNING",
+          "position": {
+            "lineNumber": 54,
+            "columnNumber": 6
+          }
+        },
+        {
+          "issue": "WCAG2AAA.Principle3.Guideline3_3.3_3_1.G83,G84,G85",
+          "description": "If an input error is automatically detected in this form, check that the item(s) in error are identified and the error(s) are described to the user in text.",
+          "element": "<form id=\"gameOflife\" name=\"gameOflife\" #frmgameoflife=\"ngForm\" novalidate=\"\">\n        <div class=\"form-group\">\n          <label for=\"Rows\"> Number of Rows</label>\n          <input type=\"text\" class=\"form-control\" id=\"totalrows\" [ngmodeloptions]=\"{standalone: true}\" #totalrows=\"ngModel\" (keypress)=\"numberOnly($event)\" [(ngmodel)]=\"gameOflife.rows\" required=\"\">\n          <div *ngif=\"totalrows.errors?.required  &amp;&amp; totalrows.touched\" class=\"alert alert-danger\">\n            Number of Rows is required\n          </div>\n\n        </div>\n\n\n        <div class=\"form-group\">\n          <label for=\"columns\">Number of Columns</label>\n          <input type=\"text\" class=\"form-control\" #totalolumns=\"ngModel\" id=\"totalolumns\" (keypress)=\"numberOnly($event)\" [ngmodeloptions]=\"{standalone: true}\" [(ngmodel)]=\"gameOflife.columns\" required=\"\">\n          <div *ngif=\"totalolumns.errors?.required  &amp;&amp; totalolumns.touched\" class=\"alert alert-danger\">\n            Number of Columns is required\n          </div>\n\n\n        </div>\n        <div class=\"form-group\">\n          <label for=\"columns\">Step Interval</label>\n          <input type=\"text\" #delaybetweenframes=\"ngModel\" class=\"form-control\" (keypress)=\"numberOnly($event)\" id=\"delayBetweenFrames\" [ngmodeloptions]=\"{standalone: true}\" [(ngmodel)]=\"gameOflife.newdelayBetweenFrames\" required=\"\">\n\n          <div *ngif=\"delayBetweenFrames.errors?.required  &amp;&amp; delayBetweenFrames.touched\" class=\"alert alert-danger\">\n            Step Interval is required\n          </div>\n        </div>\n\n        <button type=\"submit\" class=\"btn btn-success\" [disabled]=\"delayBetweenFrames.errors?.required",
+          "severity": "NOTICE",
+          "position": {
+            "lineNumber": 1,
+            "columnNumber": 0
+          }
+        },
+        {
+          "issue": "WCAG2AAA.Principle3.Guideline3_3.3_3_2.G131,G89,G184,H90",
+          "description": "Check that descriptive labels or instructions (including for required fields) are provided for user input in this form.",
+          "element": "<form id=\"gameOflife\" name=\"gameOflife\" #frmgameoflife=\"ngForm\" novalidate=\"\">\n        <div class=\"form-group\">\n          <label for=\"Rows\"> Number of Rows</label>\n          <input type=\"text\" class=\"form-control\" id=\"totalrows\" [ngmodeloptions]=\"{standalone: true}\" #totalrows=\"ngModel\" (keypress)=\"numberOnly($event)\" [(ngmodel)]=\"gameOflife.rows\" required=\"\">\n          <div *ngif=\"totalrows.errors?.required  &amp;&amp; totalrows.touched\" class=\"alert alert-danger\">\n            Number of Rows is required\n          </div>\n\n        </div>\n\n\n        <div class=\"form-group\">\n          <label for=\"columns\">Number of Columns</label>\n          <input type=\"text\" class=\"form-control\" #totalolumns=\"ngModel\" id=\"totalolumns\" (keypress)=\"numberOnly($event)\" [ngmodeloptions]=\"{standalone: true}\" [(ngmodel)]=\"gameOflife.columns\" required=\"\">\n          <div *ngif=\"totalolumns.errors?.required  &amp;&amp; totalolumns.touched\" class=\"alert alert-danger\">\n            Number of Columns is required\n          </div>\n\n\n        </div>\n        <div class=\"form-group\">\n          <label for=\"columns\">Step Interval</label>\n          <input type=\"text\" #delaybetweenframes=\"ngModel\" class=\"form-control\" (keypress)=\"numberOnly($event)\" id=\"delayBetweenFrames\" [ngmodeloptions]=\"{standalone: true}\" [(ngmodel)]=\"gameOflife.newdelayBetweenFrames\" required=\"\">\n\n          <div *ngif=\"delayBetweenFrames.errors?.required  &amp;&amp; delayBetweenFrames.touched\" class=\"alert alert-danger\">\n            Step Interval is required\n          </div>\n        </div>\n\n        <button type=\"submit\" class=\"btn btn-success\" [disabled]=\"delayBetweenFrames.errors?.required",
+          "severity": "NOTICE",
+          "position": {
+            "lineNumber": 1,
+            "columnNumber": 0
+          }
+        },
+        {
+          "issue": "WCAG2AAA.Principle3.Guideline3_3.3_3_3.G177",
+          "description": "Check that this form provides suggested corrections to errors in user input, unless it would jeopardize the security or purpose of the content.",
+          "element": "<form id=\"gameOflife\" name=\"gameOflife\" #frmgameoflife=\"ngForm\" novalidate=\"\">\n        <div class=\"form-group\">\n          <label for=\"Rows\"> Number of Rows</label>\n          <input type=\"text\" class=\"form-control\" id=\"totalrows\" [ngmodeloptions]=\"{standalone: true}\" #totalrows=\"ngModel\" (keypress)=\"numberOnly($event)\" [(ngmodel)]=\"gameOflife.rows\" required=\"\">\n          <div *ngif=\"totalrows.errors?.required  &amp;&amp; totalrows.touched\" class=\"alert alert-danger\">\n            Number of Rows is required\n          </div>\n\n        </div>\n\n\n        <div class=\"form-group\">\n          <label for=\"columns\">Number of Columns</label>\n          <input type=\"text\" class=\"form-control\" #totalolumns=\"ngModel\" id=\"totalolumns\" (keypress)=\"numberOnly($event)\" [ngmodeloptions]=\"{standalone: true}\" [(ngmodel)]=\"gameOflife.columns\" required=\"\">\n          <div *ngif=\"totalolumns.errors?.required  &amp;&amp; totalolumns.touched\" class=\"alert alert-danger\">\n            Number of Columns is required\n          </div>\n\n\n        </div>\n        <div class=\"form-group\">\n          <label for=\"columns\">Step Interval</label>\n          <input type=\"text\" #delaybetweenframes=\"ngModel\" class=\"form-control\" (keypress)=\"numberOnly($event)\" id=\"delayBetweenFrames\" [ngmodeloptions]=\"{standalone: true}\" [(ngmodel)]=\"gameOflife.newdelayBetweenFrames\" required=\"\">\n\n          <div *ngif=\"delayBetweenFrames.errors?.required  &amp;&amp; delayBetweenFrames.touched\" class=\"alert alert-danger\">\n            Step Interval is required\n          </div>\n        </div>\n\n        <button type=\"submit\" class=\"btn btn-success\" [disabled]=\"delayBetweenFrames.errors?.required",
+          "severity": "NOTICE",
+          "position": {
+            "lineNumber": 1,
+            "columnNumber": 0
+          }
+        },
+        {
+          "issue": "WCAG2AAA.Principle3.Guideline3_3.3_3_5.G71,G184,G193",
+          "description": "Check that context-sensitive help is available for this form, at a Web-page and/or control level.",
+          "element": "<form id=\"gameOflife\" name=\"gameOflife\" #frmgameoflife=\"ngForm\" novalidate=\"\">\n        <div class=\"form-group\">\n          <label for=\"Rows\"> Number of Rows</label>\n          <input type=\"text\" class=\"form-control\" id=\"totalrows\" [ngmodeloptions]=\"{standalone: true}\" #totalrows=\"ngModel\" (keypress)=\"numberOnly($event)\" [(ngmodel)]=\"gameOflife.rows\" required=\"\">\n          <div *ngif=\"totalrows.errors?.required  &amp;&amp; totalrows.touched\" class=\"alert alert-danger\">\n            Number of Rows is required\n          </div>\n\n        </div>\n\n\n        <div class=\"form-group\">\n          <label for=\"columns\">Number of Columns</label>\n          <input type=\"text\" class=\"form-control\" #totalolumns=\"ngModel\" id=\"totalolumns\" (keypress)=\"numberOnly($event)\" [ngmodeloptions]=\"{standalone: true}\" [(ngmodel)]=\"gameOflife.columns\" required=\"\">\n          <div *ngif=\"totalolumns.errors?.required  &amp;&amp; totalolumns.touched\" class=\"alert alert-danger\">\n            Number of Columns is required\n          </div>\n\n\n        </div>\n        <div class=\"form-group\">\n          <label for=\"columns\">Step Interval</label>\n          <input type=\"text\" #delaybetweenframes=\"ngModel\" class=\"form-control\" (keypress)=\"numberOnly($event)\" id=\"delayBetweenFrames\" [ngmodeloptions]=\"{standalone: true}\" [(ngmodel)]=\"gameOflife.newdelayBetweenFrames\" required=\"\">\n\n          <div *ngif=\"delayBetweenFrames.errors?.required  &amp;&amp; delayBetweenFrames.touched\" class=\"alert alert-danger\">\n            Step Interval is required\n          </div>\n        </div>\n\n        <button type=\"submit\" class=\"btn btn-success\" [disabled]=\"delayBetweenFrames.errors?.required",
+          "severity": "NOTICE",
+          "position": {
+            "lineNumber": 1,
+            "columnNumber": 0
+          }
+        },
+        {
+          "issue": "WCAG2AAA.Principle3.Guideline3_3.3_3_6.G98,G99,G155,G164,G168.AllForms",
+          "description": "Check that submissions to this form are either reversible, checked for input errors, and/or confirmed by the user.",
+          "element": "<form id=\"gameOflife\" name=\"gameOflife\" #frmgameoflife=\"ngForm\" novalidate=\"\">\n        <div class=\"form-group\">\n          <label for=\"Rows\"> Number of Rows</label>\n          <input type=\"text\" class=\"form-control\" id=\"totalrows\" [ngmodeloptions]=\"{standalone: true}\" #totalrows=\"ngModel\" (keypress)=\"numberOnly($event)\" [(ngmodel)]=\"gameOflife.rows\" required=\"\">\n          <div *ngif=\"totalrows.errors?.required  &amp;&amp; totalrows.touched\" class=\"alert alert-danger\">\n            Number of Rows is required\n          </div>\n\n        </div>\n\n\n        <div class=\"form-group\">\n          <label for=\"columns\">Number of Columns</label>\n          <input type=\"text\" class=\"form-control\" #totalolumns=\"ngModel\" id=\"totalolumns\" (keypress)=\"numberOnly($event)\" [ngmodeloptions]=\"{standalone: true}\" [(ngmodel)]=\"gameOflife.columns\" required=\"\">\n          <div *ngif=\"totalolumns.errors?.required  &amp;&amp; totalolumns.touched\" class=\"alert alert-danger\">\n            Number of Columns is required\n          </div>\n\n\n        </div>\n        <div class=\"form-group\">\n          <label for=\"columns\">Step Interval</label>\n          <input type=\"text\" #delaybetweenframes=\"ngModel\" class=\"form-control\" (keypress)=\"numberOnly($event)\" id=\"delayBetweenFrames\" [ngmodeloptions]=\"{standalone: true}\" [(ngmodel)]=\"gameOflife.newdelayBetweenFrames\" required=\"\">\n\n          <div *ngif=\"delayBetweenFrames.errors?.required  &amp;&amp; delayBetweenFrames.touched\" class=\"alert alert-danger\">\n            Step Interval is required\n          </div>\n        </div>\n\n        <button type=\"submit\" class=\"btn btn-success\" [disabled]=\"delayBetweenFrames.errors?.required",
+          "severity": "NOTICE",
+          "position": {
+            "lineNumber": 1,
+            "columnNumber": 0
+          }
+        },
+        {
+          "issue": "WCAG2AAA.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment",
+          "description": "This label's \"for\" attribute contains an ID that does not exist in the document fragment.",
+          "element": "<label for=\"Rows\"> Number of Rows</label>",
+          "severity": "WARNING",
+          "position": {
+            "lineNumber": 57,
+            "columnNumber": 10
+          }
+        },
+        {
+          "issue": "WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.BgImage",
+          "description": "This element's text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 7:1.",
+          "element": "<label for=\"Rows\"> Number of Rows</label>",
+          "severity": "WARNING",
+          "position": {
+            "lineNumber": 57,
+            "columnNumber": 10
+          }
+        },
+        {
+          "issue": "WCAG2AAA.Principle4.Guideline4_1.4_1_2.H91.InputText.Name",
+          "description": "This text input element does not have a name available to an accessibility API. Valid names are: label element, title attribute, aria-label attribute, aria-labelledby attribute.",
+          "element": "<input type=\"text\" class=\"form-control\" id=\"totalrows\" [ngmodeloptions]=\"{standalone: true}\" #totalrows=\"ngModel\" (keypress)=\"numberOnly($event)\" [(ngmodel)]=\"gameOflife.rows\" required=\"\">",
+          "severity": "ERROR",
+          "position": {
+            "lineNumber": 1,
+            "columnNumber": 0
+          }
+        },
+        {
+          "issue": "WCAG2AAA.Principle1.Guideline1_3.1_3_1.F68",
+          "description": "This form field should be labelled in some way. Use the label element (either with a \"for\" attribute or wrapped around the form field), or \"title\", \"aria-label\" or \"aria-labelledby\" attributes as appropriate.",
+          "element": "<input type=\"text\" class=\"form-control\" id=\"totalrows\" [ngmodeloptions]=\"{standalone: true}\" #totalrows=\"ngModel\" (keypress)=\"numberOnly($event)\" [(ngmodel)]=\"gameOflife.rows\" required=\"\">",
+          "severity": "ERROR",
+          "position": {
+            "lineNumber": 1,
+            "columnNumber": 0
+          }
+        },
+        {
+          "issue": "WCAG2AAA.Principle3.Guideline3_2.3_2_1.G107",
+          "description": "Check that a change of context does not occur when this input field receives focus.",
+          "element": "<input type=\"text\" class=\"form-control\" id=\"totalrows\" [ngmodeloptions]=\"{standalone: true}\" #totalrows=\"ngModel\" (keypress)=\"numberOnly($event)\" [(ngmodel)]=\"gameOflife.rows\" required=\"\">",
+          "severity": "NOTICE",
+          "position": {
+            "lineNumber": 1,
+            "columnNumber": 0
+          }
+        },
+        {
+          "issue": "WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.BgImage",
+          "description": "This element's text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 7:1.",
+          "element": "<div *ngif=\"totalrows.errors?.required  &amp;&amp; totalrows.touched\" class=\"alert alert-danger\">\n            Number of Rows is required\n          </div>",
+          "severity": "WARNING",
+          "position": {
+            "lineNumber": 1,
+            "columnNumber": 0
+          }
+        },
+        {
+          "issue": "WCAG2AAA.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment",
+          "description": "This label's \"for\" attribute contains an ID that does not exist in the document fragment.",
+          "element": "<label for=\"columns\">Number of Columns</label>",
+          "severity": "WARNING",
+          "position": {
+            "lineNumber": 68,
+            "columnNumber": 10
+          }
+        },
+        {
+          "issue": "WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.BgImage",
+          "description": "This element's text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 7:1.",
+          "element": "<label for=\"columns\">Number of Columns</label>",
+          "severity": "WARNING",
+          "position": {
+            "lineNumber": 68,
+            "columnNumber": 10
+          }
+        },
+        {
+          "issue": "WCAG2AAA.Principle4.Guideline4_1.4_1_2.H91.InputText.Name",
+          "description": "This text input element does not have a name available to an accessibility API. Valid names are: label element, title attribute, aria-label attribute, aria-labelledby attribute.",
+          "element": "<input type=\"text\" class=\"form-control\" #totalolumns=\"ngModel\" id=\"totalolumns\" (keypress)=\"numberOnly($event)\" [ngmodeloptions]=\"{standalone: true}\" [(ngmodel)]=\"gameOflife.columns\" required=\"\">",
+          "severity": "ERROR",
+          "position": {
+            "lineNumber": 1,
+            "columnNumber": 0
+          }
+        },
+        {
+          "issue": "WCAG2AAA.Principle1.Guideline1_3.1_3_1.F68",
+          "description": "This form field should be labelled in some way. Use the label element (either with a \"for\" attribute or wrapped around the form field), or \"title\", \"aria-label\" or \"aria-labelledby\" attributes as appropriate.",
+          "element": "<input type=\"text\" class=\"form-control\" #totalolumns=\"ngModel\" id=\"totalolumns\" (keypress)=\"numberOnly($event)\" [ngmodeloptions]=\"{standalone: true}\" [(ngmodel)]=\"gameOflife.columns\" required=\"\">",
+          "severity": "ERROR",
+          "position": {
+            "lineNumber": 1,
+            "columnNumber": 0
+          }
+        },
+        {
+          "issue": "WCAG2AAA.Principle3.Guideline3_2.3_2_1.G107",
+          "description": "Check that a change of context does not occur when this input field receives focus.",
+          "element": "<input type=\"text\" class=\"form-control\" #totalolumns=\"ngModel\" id=\"totalolumns\" (keypress)=\"numberOnly($event)\" [ngmodeloptions]=\"{standalone: true}\" [(ngmodel)]=\"gameOflife.columns\" required=\"\">",
+          "severity": "NOTICE",
+          "position": {
+            "lineNumber": 1,
+            "columnNumber": 0
+          }
+        },
+        {
+          "issue": "WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.BgImage",
+          "description": "This element's text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 7:1.",
+          "element": "<div *ngif=\"totalolumns.errors?.required  &amp;&amp; totalolumns.touched\" class=\"alert alert-danger\">\n            Number of Columns is required\n          </div>",
+          "severity": "WARNING",
+          "position": {
+            "lineNumber": 1,
+            "columnNumber": 0
+          }
+        },
+        {
+          "issue": "WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.BgImage",
+          "description": "This element's text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 7:1.",
+          "element": "<label for=\"columns\">Step Interval</label>",
+          "severity": "WARNING",
+          "position": {
+            "lineNumber": 79,
+            "columnNumber": 10
+          }
+        },
+        {
+          "issue": "WCAG2AAA.Principle4.Guideline4_1.4_1_2.H91.InputText.Name",
+          "description": "This text input element does not have a name available to an accessibility API. Valid names are: label element, title attribute, aria-label attribute, aria-labelledby attribute.",
+          "element": "<input type=\"text\" #delaybetweenframes=\"ngModel\" class=\"form-control\" (keypress)=\"numberOnly($event)\" id=\"delayBetweenFrames\" [ngmodeloptions]=\"{standalone: true}\" [(ngmodel)]=\"gameOflife.newdelayBetweenFrames\" required=\"\">",
+          "severity": "ERROR",
+          "position": {
+            "lineNumber": 1,
+            "columnNumber": 0
+          }
+        },
+        {
+          "issue": "WCAG2AAA.Principle1.Guideline1_3.1_3_1.F68",
+          "description": "This form field should be labelled in some way. Use the label element (either with a \"for\" attribute or wrapped around the form field), or \"title\", \"aria-label\" or \"aria-labelledby\" attributes as appropriate.",
+          "element": "<input type=\"text\" #delaybetweenframes=\"ngModel\" class=\"form-control\" (keypress)=\"numberOnly($event)\" id=\"delayBetweenFrames\" [ngmodeloptions]=\"{standalone: true}\" [(ngmodel)]=\"gameOflife.newdelayBetweenFrames\" required=\"\">",
+          "severity": "ERROR",
+          "position": {
+            "lineNumber": 1,
+            "columnNumber": 0
+          }
+        },
+        {
+          "issue": "WCAG2AAA.Principle3.Guideline3_2.3_2_1.G107",
+          "description": "Check that a change of context does not occur when this input field receives focus.",
+          "element": "<input type=\"text\" #delaybetweenframes=\"ngModel\" class=\"form-control\" (keypress)=\"numberOnly($event)\" id=\"delayBetweenFrames\" [ngmodeloptions]=\"{standalone: true}\" [(ngmodel)]=\"gameOflife.newdelayBetweenFrames\" required=\"\">",
+          "severity": "NOTICE",
+          "position": {
+            "lineNumber": 1,
+            "columnNumber": 0
+          }
+        },
+        {
+          "issue": "WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.BgImage",
+          "description": "This element's text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 7:1.",
+          "element": "<div *ngif=\"delayBetweenFrames.errors?.required  &amp;&amp; delayBetweenFrames.touched\" class=\"alert alert-danger\">\n            Step Interval is required\n          </div>",
+          "severity": "WARNING",
+          "position": {
+            "lineNumber": 1,
+            "columnNumber": 0
+          }
+        },
+        {
+          "issue": "WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.BgImage",
+          "description": "This element's text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 7:1.",
+          "element": "<button type=\"submit\" class=\"btn btn-success\" [disabled]=\"delayBetweenFrames.errors?.required",
+          "severity": "WARNING",
+          "position": {
+            "lineNumber": 1,
+            "columnNumber": 0
+          }
+        },
+        {
+          "issue": "WCAG2AAA.Principle3.Guideline3_2.3_2_1.G107",
+          "description": "Check that a change of context does not occur when this input field receives focus.",
+          "element": "<button type=\"submit\" class=\"btn btn-success\" [disabled]=\"delayBetweenFrames.errors?.required",
+          "severity": "NOTICE",
+          "position": {
+            "lineNumber": 1,
+            "columnNumber": 0
+          }
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "name": "F:/TCS Test/-GameofLife/src/assets/mock/test-resource.html",
+      "errors": 0,
+      "warnings": 1,
+      "notices": 1,
+      "errorDetails": [
+        {
+          "issue": "WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.BgImage",
+          "description": "This element's text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 7:1.",
+          "element": "<a href=\"#\">some text</a>",
+          "severity": "WARNING",
+          "position": {
+            "lineNumber": 1,
+            "columnNumber": 12
+          }
+        },
+        {
+          "issue": "WCAG2AAA.Principle2.Guideline2_4.2_4_9.H30",
+          "description": "Check that text of the link describes the purpose of the link.",
+          "element": "<a href=\"#\">some text</a>",
+          "severity": "NOTICE",
+          "position": {
+            "lineNumber": 1,
+            "columnNumber": 12
+          }
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "name": "F:/TCS Test/-GameofLife/src/index.html",
+      "errors": 0,
+      "warnings": 0,
+      "notices": 1,
+      "errorDetails": [
+        {
+          "issue": "WCAG2AAA.Principle2.Guideline2_4.2_4_2.H25.2",
+          "description": "Check that the title element describes the document.",
+          "element": "<title>Angular-6-Starter</title>",
+          "severity": "NOTICE",
+          "position": {
+            "lineNumber": 5,
+            "columnNumber": 2
+          }
+        }
+      ]
+    }
+  ]
+}

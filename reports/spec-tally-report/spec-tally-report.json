@@ -1,0 +1,10 @@
+{
+  "statistics": {
+    "success": 96,
+    "failed": 0,
+    "skipped": 0,
+    "total": 96,
+    "didNotExecute": 0
+  },
+  "failures": []
+}

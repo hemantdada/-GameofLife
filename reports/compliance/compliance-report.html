@@ -1,0 +1,645 @@
+
+  <!doctype html>
+  <html>
+    
+    <head>
+      <link type="text/css" rel="stylesheet" href="./bootstrap.min.css">
+      <script src="./canvasjs.min.js"></script>
+      <script src="./gauge.min.js"></script>
+      <title>Compliance Report</title>
+    </head>
+
+    <style>
+      body {
+        background-color: lightcyan;
+        ;
+      }
+    </style>
+    
+    <body>
+      <div class="container" style="background-color: lightgoldenrodyellow; padding-top: 10px; padding-bottom: 30px;">
+        <div class="col-lg-12" style="text-align: center">
+          <h1>Code Compliance report</h1>
+          <div id="allHistoryLink" style="text-align: right;"><a onclick="showAllHistoricalData()" href="javascript: void(0)">Show historical data</a></div>
+          <div id="lastAllLink" style="text-align: right; display: none;"><a onclick="showLastAll()" href="javascript: void(0)">Show Latest build</a></div>
+        </div>
+        <hr style="border: 1px black solid; clear:both; display:block; width: 100%; height: 1px;">
+        <div class="col-lg-12" style="border: 1px black solid; margin: 0px; padding: 0px">
+    
+          <div class="col-lg-12">
+            <div class="col-lg-6" style="border-right: 1px black solid; margin-bottom: 20px;">
+              <div class="col-lg-12" style="text-align: center; margin: 0px; padding: 0px;">
+                <h2>
+                  <a href="../build/statistics.html">Build Details</a>
+                </h2>
+                <div id="buildHistoryLink" style="text-align: right;"><a onclick="showBuildHistoricalData()" href="javascript: void(0)">Show historical data</a></div>
+                <div id="lastBuildLink" style="text-align: right; display: none;"><a onclick="showLastBuild()" href="javascript: void(0)">Show Latest build</a></div>
+              </div>
+              <hr style="border-bottom: 1px black solid; clear:both; display:block; width: 96%; height: 1px;">
+              <div id="lastBuild" class="col-lg-12" style="margin: 0px; padding: 0px; margin-bottom: 20px;">
+                <div class="col-lg-6" style="border-right: 1px black solid; text-align: center;">
+                  <canvas style="height: 150px !important; width: 200px !important;" id="build"></canvas>
+                </div>
+                <div class="col-lg-6">
+                  <div>
+                    <strong>Files: 16</strong>
+                  </div>
+                  <div>
+                    <strong>Size: 1.743479 Mb</strong>
+                  </div>
+                  <div>
+                    <strong>Threshold: 5 Mb</strong>
+                  </div>
+                  <br>
+                  <div>
+                    <strong>Start: 2019-6-26 08:05:40</strong>
+                  </div>
+                  <div>
+                    <strong>End: 2019-6-26 08:07:05</strong>
+                  </div>
+                  <div>
+                    <strong>Execution Time: 85.203s</strong>
+                  </div>
+                </div>
+              </div>
+              <div id="buildHistory" class="col-lg-12" style="margin: 0px; padding: 0px; margin-bottom: 20px; display: none;">
+                <div id="buildChartContainer" style="height: 200px; width: 96%;"></div>
+              </div>
+            </div>
+    
+            <div class="col-lg-6" style="margin-bottom: 20px;">
+              <div class="col-lg-12" style="text-align: center; margin: 0px; padding: 0px;">
+                <h2>
+                  <a href="../accessibility/accessibility-report.html">Accessibility Report</a>
+                </h2>
+                <div id="accessibilityHistoryLink" style="text-align: right;"><a onclick="showAccessibilityHistoricalData()" href="javascript: void(0)">Show historical data</a></div>
+                <div id="lastAccessibilityLink" style="text-align: right; display: none;"><a onclick="showLastAccessibility()" href="javascript: void(0)">Show Latest report</a></div>
+              </div>
+              <hr style="border-bottom: 1px black solid; clear:both; display:block; width: 96%; height: 1px;">
+              <div id="lastAccessibility" class="col-lg-12" style="margin: 0px; padding: 0px; margin-bottom: 20px;">
+                <div class="col-lg-6" style="border-right: 1px black solid; text-align: center;">
+                  <canvas style="height: 150px !important; width: 200px !important;" id="accessibility"></canvas>
+                </div>
+                <div class="col-lg-6">
+                  <div>
+                    <strong>Total: 69</strong>
+                  </div>
+                  <div>
+                    <strong>Errors: 10</strong>
+                  </div>
+                  <div>
+                    <strong>Warnings: 31</strong>
+                  </div>
+                  <div>
+                    <strong>Notices: 28</strong>
+                  </div>
+                  <div>
+                    <strong>Threshold: 100</strong>
+                  </div>
+                  <br>
+                  <div>
+                    <strong>Start: 2019-6-26 08:05:40</strong>
+                  </div>
+                  <div>
+                    <strong>End: 2019-6-26 08:05:55</strong>
+                  </div>
+                  <div>
+                    <strong>Execution Time: 14.92s</strong>
+                  </div>
+                </div>
+              </div>
+              <div id="accessibilityHistory" class="col-lg-12" style="margin: 0px; padding: 0px; margin-bottom: 20px; display: none;">
+                <div id="accessibilityChartContainer" style="height: 200px; width: 96%;"></div>
+              </div>
+            </div>
+          </div>
+    
+          <hr style="border-bottom: 1px black solid; clear:both; display:block; width: 96%; height: 1px;">
+    
+          <div class="col-lg-12">
+            <div class="col-lg-6" style="border-right: 1px black solid; margin-bottom: 20px;">
+              <div class="col-lg-12" style="text-align: center; margin: 0px; padding: 0px;">
+                <h2>
+                  <a href="../tslint-html-report/tslint-report.html">TSLint Report</a>
+                </h2>
+                <div id="tslintHistoryLink" style="text-align: right;"><a onclick="showTslintHistoricalData()" href="javascript: void(0)">Show historical data</a></div>
+                <div id="lastTslintLink" style="text-align: right; display: none;"><a onclick="showLastTslint()" href="javascript: void(0)">Show Latest report</a></div>
+              </div>
+              <hr style="border-bottom: 1px black solid; clear:both; display:block; width: 96%; height: 1px;">
+              <div id="lastTslint" class="col-lg-12" style="margin: 0px; padding: 0px; margin-bottom: 20px;">
+                <div class="col-lg-6" style="border-right: 1px black solid; text-align: center;">
+                  <canvas style="height: 150px !important; width: 200px !important;" id="tslint"></canvas>
+                </div>
+                <div class="col-lg-6">
+                  <div>
+                    <strong>Count: 0</strong>
+                  </div>
+                  <div>
+                    <strong>Threshold: 100</strong>
+                  </div>
+                  <br>
+                  <div>
+                    <strong>Start: 2019-6-26 08:05:40</strong>
+                  </div>
+                  <div>
+                    <strong>End: 2019-6-26 08:05:52</strong>
+                  </div>
+                  <div>
+                    <strong>Execution Time: 12.395s</strong>
+                  </div>
+                </div>
+              </div>
+              <div id="tslintHistory" class="col-lg-12" style="margin: 0px; padding: 0px; margin-bottom: 20px; display: none;">
+                <div id="tslintChartContainer" style="height: 200px; width: 96%;"></div>
+              </div>
+            </div>
+            <div class="col-lg-6" style="margin-bottom: 20px;">
+              <div class="col-lg-12" style="text-align: center; margin: 0px; padding: 0px;">
+                <h2>
+                  <a href="../code-duplicity/jscpd-report.html">Code Duplicity Report</a>
+                </h2>
+                <div id="jscpdHistoryLink" style="text-align: right;"><a onclick="showJscpdHistoricalData()" href="javascript: void(0)">Show historical data</a></div>
+                <div id="lastJscpdLink" style="text-align: right; display: none;"><a onclick="showLastJscpd()" href="javascript: void(0)">Show Latest report</a></div>
+              </div>
+              <hr style="border-bottom: 1px black solid; clear:both; display:block; width: 96%; height: 1px;">
+              <div id="lastJscpd" class="col-lg-12" style="margin: 0px; padding: 0px; margin-bottom: 20px;">
+                <div class="col-lg-6" style="border-right: 1px black solid; text-align: center;">
+                  <canvas style="height: 150px !important; width: 200px !important;" id="jscpd"></canvas>
+                </div>
+                <div class="col-lg-6">
+                  <div>
+                    <strong>duplicity(%): 0.00</strong>
+                  </div>
+                  <div>
+                    <strong>duplicates: 0</strong>
+                  </div>
+                  <div>
+                    <strong>files: 0</strong>
+                  </div>
+                  <br>
+                  <div>
+                    <strong>Start: 2019-6-26 08:05:40</strong>
+                  </div>
+                  <div>
+                    <strong>End: 2019-6-26 08:05:53</strong>
+                  </div>
+                  <div>
+                    <strong>Execution Time: 13.079s</strong>
+                  </div>
+                </div>
+              </div>
+              <div id="jscpdHistory" class="col-lg-12" style="margin: 0px; padding: 0px; margin-bottom: 20px; display: none;">
+                <div id="jscpdChartContainer" style="height: 200px; width: 96%;"></div>
+              </div>
+            </div>
+          </div>
+    
+          <hr style="border-bottom: 1px black solid; clear:both; display:block; width: 96%; height: 1px;">
+    
+          <div class="col-lg-12">
+            <div class="col-lg-12" style="text-align: center;">
+              <h2>
+                <a href="../coverage/html/html/index.html">Unit test coverage</a>
+              </h2>
+            </div>
+            <hr style="border-bottom: 1px black solid; clear:both; display:block; width: 96%; height: 1px;">
+            <div class="col-lg-6" style="border-right: 1px black solid; margin-bottom: 20px;">
+              <div style="text-align: center;">
+                <strong>Test Execution Summary</strong>
+              </div>
+              <hr style="border-bottom: 1px black solid; clear:both; display:block; width: 96%; height: 1px;">
+              <div style="padding-left: 30px;">
+                <div>
+                  <strong>Total: 96</strong>
+                </div>
+                <div>
+                  <strong>Success: 96</strong>
+                </div>
+                <div>
+                  <strong>Failed: 0</strong>
+                </div>
+                <div>
+                  <strong>Skipped: 0</strong>
+                </div>
+                <div>
+                  <strong>Did not execute: 0</strong>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6" style="margin-bottom: 20px;">
+              <div style="text-align: center;">
+                <strong>Execution time Details</strong>
+              </div>
+              <hr style="border-bottom: 1px black solid; clear:both; display:block; width: 96%; height: 1px;">
+              <div style="padding-left: 30px;">
+                <div>
+                  <strong>Start: 2019-6-26 08:05:40</strong>
+                </div>
+                <div>
+                  <strong>End: 2019-6-26 08:06:25</strong>
+                </div>
+                <div>
+                  <strong>Execution Time: 45.51s</strong>
+                </div>
+              </div>
+            </div>
+            <hr style="border-bottom: 1px black solid; clear:both; display:block; width: 96%; height: 1px;">
+            <div class="col-lg-6" style="border-right: 1px black solid; margin-bottom: 20px; text-align: center;">
+              <h3>Lines: 72.67%</h4>
+              <div id="lineHistoryLink" style="text-align: right;"><a onclick="showLineHistoricalData()" href="javascript: void(0)">Show historical data</a></div>
+              <div id="lastLineLink" style="text-align: right; display: none;"><a onclick="showLastLine()" href="javascript: void(0)">Show Latest report</a></div>
+              <hr style="border-bottom: 1px black solid; clear:both; display:block; width: 96%; height: 1px;">
+              <div id="lastLine" class="col-lg-12" style="padding: 0px; margin: 0px;">
+                <div class="col-lg-6" style="border-right: 1px black solid; margin-bottom: 20px; text-align: center;">
+                  <canvas style="height: 150px !important; width: 200px !important;" id="lines"></canvas>
+                </div>
+                <div class="col-lg-6" style="text-align: left;">
+                  <div>
+                    <strong>Total: 472</strong>
+                  </div>
+                  <div>
+                    <strong>Covered: 343</strong>
+                  </div>
+                  <div>
+                    <strong>Skipped: 0</strong>
+                  </div>
+                </div>
+              </div>
+              <div id="lineHistory" class="col-lg-12" style="margin: 0px; padding: 0px; margin-bottom: 20px; display: none;">
+                <div id="lineChartContainer" style="height: 200px; width: 96%;"></div>
+              </div>
+            </div>
+            <div class="col-lg-6" style="margin-bottom: 20px; text-align: center;">
+              <h3>Branches: 52.94%</h4>
+              <div id="branchHistoryLink" style="text-align: right;"><a onclick="showBranchHistoricalData()" href="javascript: void(0)">Show historical data</a></div>
+              <div id="lastBranchLink" style="text-align: right; display: none;"><a onclick="showLastBranch()" href="javascript: void(0)">Show Latest report</a></div>
+              <hr style="border-bottom: 1px black solid; clear:both; display:block; width: 96%; height: 1px;">
+              <div id="lastBranch" class="col-lg-12" style="padding: 0px; margin: 0px;">
+                <div class="col-lg-6" style="border-right: 1px black solid; margin-bottom: 20px; text-align: center;">
+                  <canvas style="height: 150px !important; width: 200px !important;" id="branches"></canvas>
+                </div>
+                <div class="col-lg-6" style="text-align: left;">
+                  <div>
+                    <strong>Total: 102</strong>
+                  </div>
+                  <div>
+                    <strong>Covered: 54</strong>
+                  </div>
+                  <div>
+                    <strong>Skipped: 4</strong>
+                  </div>
+                </div>
+              </div>
+              <div id="branchHistory" class="col-lg-12" style="margin: 0px; padding: 0px; margin-bottom: 20px; display: none;">
+                <div id="branchChartContainer" style="height: 200px; width: 96%;"></div>
+              </div>
+            </div>
+            <hr style="border-bottom: 1px black solid; clear:both; display:block; width: 96%; height: 1px;">
+            <div class="col-lg-6" style="border-right: 1px black solid; margin-bottom: 20px; text-align: center;">
+              <h3>Functions: 77.57%</h4>
+              <div id="functionHistoryLink" style="text-align: right;"><a onclick="showFunctionHistoricalData()" href="javascript: void(0)">Show historical data</a></div>
+              <div id="lastFunctionLink" style="text-align: right; display: none;"><a onclick="showLastFunction()" href="javascript: void(0)">Show Latest report</a></div>
+              <hr style="border-bottom: 1px black solid; clear:both; display:block; width: 96%; height: 1px;">
+              <div id="lastFunction" class="col-lg-12" style="padding: 0px; margin: 0px;">
+                <div class="col-lg-6" style="border-right: 1px black solid; margin-bottom: 20px; text-align: center;">
+                  <canvas style="height: 150px !important; width: 200px !important;" id="functions"></canvas>
+                </div>
+                <div class="col-lg-6" style="text-align: left;">
+                  <div>
+                    <strong>Total: 107</strong>
+                  </div>
+                  <div>
+                    <strong>Covered: 83</strong>
+                  </div>
+                  <div>
+                    <strong>Skipped: 3</strong>
+                  </div>
+                </div>
+              </div>
+              <div id="functionHistory" class="col-lg-12" style="margin: 0px; padding: 0px; margin-bottom: 20px; display: none;">
+                <div id="functionChartContainer" style="height: 200px; width: 96%;"></div>
+              </div>
+            </div>
+            <div class="col-lg-6" style="margin-bottom: 20px; text-align: center;">
+              <h3>Statements: 76.13%</h4>
+              <div id="statementHistoryLink" style="text-align: right;"><a onclick="showStatementHistoricalData()" href="javascript: void(0)">Show historical data</a></div>
+              <div id="lastStatementLink" style="text-align: right; display: none;"><a onclick="showLastStatement()" href="javascript: void(0)">Show Latest report</a></div>
+              <hr style="border-bottom: 1px black solid; clear:both; display:block; width: 96%; height: 1px;">
+              <div id="lastStatement" class="col-lg-12" style="padding: 0px; margin: 0px;">
+                <div class="col-lg-6" style="border-right: 1px black solid; margin-bottom: 20px; text-align: center;">
+                  <canvas style="height: 150px !important; width: 200px !important;" id="statements"></canvas>
+                </div>
+                <div class="col-lg-6" style="text-align: left;">
+                  <div>
+                    <strong>Total: 553</strong>
+                  </div>
+                  <div>
+                    <strong>Covered: 421</strong>
+                  </div>
+                  <div>
+                    <strong>Skipped: 7</strong>
+                  </div>
+                </div>
+              </div>
+              <div id="statementHistory" class="col-lg-12" style="margin: 0px; padding: 0px; margin-bottom: 20px; display: none;">
+                <div id="statementChartContainer" style="height: 200px; width: 96%;"></div>
+              </div>
+            </div>
+    
+          </div>
+    
+        </div>
+      </div>
+    </body>
+    
+    <script>
+      var opts = {
+        lines: 12, // The number of lines to draw
+        angle: -0.2, // The span of the gauge arc
+        lineWidth: 0.15, // The line thickness
+        pointer: {
+          length: 0.7, // The radius of the inner circle
+          strokeWidth: 0.025, // The thickness
+          color: '#000000' // Fill color
+        },
+        radiusScale: 1,
+        radius: 1,
+        limitMax: false, // If true, the pointer will not go past the end of the gauge
+        colorStart: '#6F6EA0', // Colors
+        colorStop: '#ff0000', // just experiment with them
+        strokeColor: '#EEEEEE', // to see which ones work best for you
+        generateGradient: true,
+        highDpiSupport: true,
+        percentColors: [
+          [0.0, "#8B0000"],
+          [0.1, "#ff0000"],
+          [0.2, "#ff4500"],
+          [0.4, "#ffa500"],
+          [0.6, "#ADFF2F"],
+          [0.8, "#00ff00"],
+          [1.0, "#006400"]
+        ],
+        staticLabels: {
+          font: "10px sans-serif", // Specifies font
+          labels: [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100], // Print labels at these values
+          fractionDigits: 0.5 // Optional: Numerical precision. 0=round off.
+        },
+        staticZones: [
+          {
+            strokeStyle: "#8B0000",
+            min: 0,
+            max: 10
+          },
+          {
+            strokeStyle: "#ff0000",
+            min: 10,
+            max: 20
+          },
+          {
+            strokeStyle: "#ff4500",
+            min: 20,
+            max: 40
+          },
+          {
+            strokeStyle: "#ffa500",
+            min: 40,
+            max: 60
+          },
+          {
+            strokeStyle: "#ADFF2F",
+            min: 60,
+            max: 80
+          },
+          {
+            strokeStyle: "#00ff00",
+            min: 80,
+            max: 90
+          },
+          {
+            strokeStyle: "#006400",
+            min: 90,
+            max: 100
+          }
+        ]
+      };
+    
+      var buildReport = new Gauge(document.getElementById('build')).setOptions(opts);
+      buildReport.maxValue = 100;
+      buildReport.setMinValue(0);
+      buildReport.animationSpeed = 100; // set animation speed (32 is default value)
+      buildReport.set(65.13042);
+    
+      var accessibilityReport = new Gauge(document.getElementById('accessibility')).setOptions(opts);
+      accessibilityReport.maxValue = 100;
+      accessibilityReport.setMinValue(0);
+      accessibilityReport.animationSpeed = 100; // set animation speed (32 is default value)
+      accessibilityReport.set(31);
+  
+      var tslintReport = new Gauge(document.getElementById('tslint')).setOptions(opts);
+      tslintReport.maxValue = 100;
+      tslintReport.setMinValue(0);
+      tslintReport.animationSpeed = 100; // set animation speed (32 is default value)
+      tslintReport.set(100);
+    
+      var jscpdReport = new Gauge(document.getElementById('jscpd')).setOptions(opts);
+      jscpdReport.maxValue = 100;
+      jscpdReport.setMinValue(0);
+      jscpdReport.animationSpeed = 100; // set animation speed (32 is default value)
+      jscpdReport.set(100);
+  
+      var lineCoverage = new Gauge(document.getElementById('lines')).setOptions(opts);
+      lineCoverage.maxValue = 100;
+      lineCoverage.setMinValue(0);
+      lineCoverage.animationSpeed = 100; // set animation speed (32 is default value)
+      lineCoverage.set(72.67);
+    
+      var branchCoverage = new Gauge(document.getElementById('branches')).setOptions(opts);
+      branchCoverage.maxValue = 100;
+      branchCoverage.setMinValue(0);
+      branchCoverage.animationSpeed = 100; // set animation speed (32 is default value)
+      branchCoverage.set(52.94);
+    
+      var functionCoverage = new Gauge(document.getElementById('functions')).setOptions(opts);
+      functionCoverage.maxValue = 100;
+      functionCoverage.setMinValue(0);
+      functionCoverage.animationSpeed = 100; // set animation speed (32 is default value)
+      functionCoverage.set(77.57);
+    
+      var statementCoverage = new Gauge(document.getElementById('statements')).setOptions(opts);
+      statementCoverage.maxValue = 100;
+      statementCoverage.setMinValue(0);
+      statementCoverage.animationSpeed = 100; // set animation speed (32 is default value)
+      statementCoverage.set(76.13);
+    
+    </script>
+  
+    <script>
+  
+      var buildChartContainer = new CanvasJS.Chart("buildChartContainer", {"animationEnabled":true,"backgroundColor":"#fafad2","axisY":{"title":"build size","lineColor":"darkOrchid","includeZero":false},"axisY2":{"title":"execution time (s)","lineColor":"indigo","includeZero":false},"height":200,"toolTip":{"shared":true,"contentFormatter": function (e) { var content = " "; for (var i = 0; i < e.entries.length; i++) { content += "<strong>" + e.entries[i].dataSeries.name + "</strong>" + ": " + e.entries[i].dataPoint.y; content += "<br/>"; } return content; } },"data":[{"type":"line","color":"darkOrchid","name":"build size (mb)","dataPoints":[{"y":1},{"y":1.608028},{"y":1.636967},{"y":1.640732},{"y":1.676328},{"y":1.676328},{"y":1.679454},{"y":1.679454},{"y":1.743983},{"y":1.744087},{"y":1.744087},{"y":1.744087},{"y":1.743479}]},{"type":"line","axisYType":"secondary","color":"transparent","name":"execution time (s)","dataPoints":[{"y":0},{"y":90.624},{"y":92.043},{"y":79.108},{"y":100.229},{"y":78.707},{"y":127.276},{"y":80.47},{"y":91.822},{"y":67.49},{"y":64.363},{"y":62.088},{"y":85.203}]}]});
+      buildChartContainer.render();
+  
+      var accessibilityChartContainer = new CanvasJS.Chart("accessibilityChartContainer", {"animationEnabled":true,"backgroundColor":"#fafad2","axisY":{"title":"count","lineColor":"darkOrchid","includeZero":false},"axisY2":{"title":"execution time (s)","lineColor":"indigo","includeZero":false},"height":200,"toolTip":{"shared":true,"contentFormatter": function (e) { var content = " "; for (var i = 0; i < e.entries.length; i++) { content += "<strong>" + e.entries[i].dataSeries.name + "</strong>" + ": " + e.entries[i].dataPoint.y; content += "<br/>"; } return content; } },"data":[{"type":"line","color":"darkOrchid","name":"accessibility error count","dataPoints":[{"y":0},{"y":16},{"y":24},{"y":24},{"y":29},{"y":29},{"y":56},{"y":56},{"y":76},{"y":77},{"y":77},{"y":77},{"y":69}]},{"type":"line","axisYType":"secondary","color":"transparent","name":"execution time (s)","dataPoints":[{"y":0},{"y":26.692},{"y":23.344},{"y":24.167},{"y":25.051},{"y":23.7},{"y":25.202},{"y":27.011},{"y":11.957},{"y":12.798},{"y":13.889},{"y":14.385},{"y":14.92}]}]});
+      accessibilityChartContainer.render();
+  
+      var tslintChartContainer = new CanvasJS.Chart("tslintChartContainer", {"animationEnabled":true,"backgroundColor":"#fafad2","axisY":{"title":"count","lineColor":"darkOrchid","includeZero":false},"axisY2":{"title":"execution time (s)","lineColor":"indigo","includeZero":false},"height":200,"toolTip":{"shared":true,"contentFormatter": function (e) { var content = " "; for (var i = 0; i < e.entries.length; i++) { content += "<strong>" + e.entries[i].dataSeries.name + "</strong>" + ": " + e.entries[i].dataPoint.y; content += "<br/>"; } return content; } },"data":[{"type":"line","color":"darkOrchid","name":"Lint error count","dataPoints":[{"y":0},{"y":2},{"y":2},{"y":2},{"y":2},{"y":2},{"y":2},{"y":2},{"y":2,"indexLabel":"Failed","markerColor":"red","markerType":"cross"},{"y":2,"indexLabel":"Failed","markerColor":"red","markerType":"cross"},{"y":2,"indexLabel":"Failed","markerColor":"red","markerType":"cross"},{"y":2,"indexLabel":"Failed","markerColor":"red","markerType":"cross"},{"y":2,"indexLabel":"Failed","markerColor":"red","markerType":"cross"}]},{"type":"line","axisYType":"secondary","color":"transparent","name":"execution time (s)","dataPoints":[{"y":0},{"y":43.443},{"y":43.374},{"y":47.15},{"y":52.243},{"y":47.069},{"y":57.278},{"y":48.555},{"y":48.555},{"y":48.555},{"y":48.555},{"y":48.555},{"y":48.555}]}]});
+      tslintChartContainer.render();
+  
+      var jscpdChartContainer = new CanvasJS.Chart("jscpdChartContainer", {"animationEnabled":true,"backgroundColor":"#fafad2","axisY":{"title":"duplicity %","lineColor":"darkOrchid","includeZero":false},"axisY2":{"title":"execution time (s)","lineColor":"indigo","includeZero":false},"height":200,"toolTip":{"shared":true,"contentFormatter": function (e) { var content = " "; for (var i = 0; i < e.entries.length; i++) { content += "<strong>" + e.entries[i].dataSeries.name + "</strong>" + ": " + e.entries[i].dataPoint.y; content += "<br/>"; } return content; } },"data":[{"type":"line","color":"darkOrchid","name":"code duplicity (%)","dataPoints":[{"y":0},{"y":0},{"y":0},{"y":0},{"y":0},{"y":0},{"y":0},{"y":0},{"y":0},{"y":0},{"y":0},{"y":0},{"y":0}]},{"type":"line","axisYType":"secondary","color":"transparent","name":"execution time (s)","dataPoints":[{"y":0},{"y":25.493},{"y":22.753},{"y":21.992},{"y":25.549},{"y":22.468},{"y":23.781},{"y":22.851},{"y":14.916},{"y":14.896},{"y":15.717},{"y":10.561},{"y":13.079}]}]});
+      jscpdChartContainer.render();
+  
+      var lineChartContainer = new CanvasJS.Chart("lineChartContainer", {"animationEnabled":true,"backgroundColor":"#fafad2","axisY":{"title":"line coverage","lineColor":"darkOrchid","includeZero":false},"axisY2":{"title":"execution time (s)","lineColor":"indigo","includeZero":false},"height":200,"toolTip":{"shared":true,"contentFormatter": function (e) { var content = " "; for (var i = 0; i < e.entries.length; i++) { content += "<strong>" + e.entries[i].dataSeries.name + "</strong>" + ": " + e.entries[i].dataPoint.y; content += "<br/>"; } return content; } },"data":[{"type":"line","color":"darkOrchid","name":"line coverage","dataPoints":[{"y":100},{"y":100},{"y":100},{"y":100},{"y":100},{"y":100},{"y":100},{"y":100},{"y":74.45},{"y":74.45},{"y":74.45},{"y":74.45},{"y":72.67}]},{"type":"line","axisYType":"secondary","color":"transparent","name":"execution time (s)","dataPoints":[{"y":0},{"y":56.641},{"y":56.048},{"y":58.77},{"y":61.871},{"y":61.097},{"y":76.085},{"y":60.353},{"y":63.847},{"y":48.72},{"y":46.507},{"y":42.365},{"y":45.51}]}]});
+      lineChartContainer.render();
+  
+      var branchChartContainer = new CanvasJS.Chart("branchChartContainer", {"animationEnabled":true,"backgroundColor":"#fafad2","axisY":{"title":"branch coverage","lineColor":"darkOrchid","includeZero":false},"axisY2":{"title":"execution time (s)","lineColor":"indigo","includeZero":false},"height":200,"toolTip":{"shared":true,"contentFormatter": function (e) { var content = " "; for (var i = 0; i < e.entries.length; i++) { content += "<strong>" + e.entries[i].dataSeries.name + "</strong>" + ": " + e.entries[i].dataPoint.y; content += "<br/>"; } return content; } },"data":[{"type":"line","color":"darkOrchid","name":"branch coverage","dataPoints":[{"y":100},{"y":100},{"y":100},{"y":100},{"y":100},{"y":100},{"y":100},{"y":100},{"y":58.7},{"y":58.7},{"y":58.7},{"y":58.7},{"y":52.94}]},{"type":"line","axisYType":"secondary","color":"transparent","name":"execution time (s)","dataPoints":[{"y":0},{"y":56.641},{"y":56.048},{"y":58.77},{"y":61.871},{"y":61.097},{"y":76.085},{"y":60.353},{"y":63.847},{"y":48.72},{"y":46.507},{"y":42.365},{"y":45.51}]}]});
+      branchChartContainer.render();
+  
+      var functionChartContainer = new CanvasJS.Chart("functionChartContainer", {"animationEnabled":true,"backgroundColor":"#fafad2","axisY":{"title":"function coverage","lineColor":"darkOrchid","includeZero":false},"axisY2":{"title":"execution time (s)","lineColor":"indigo","includeZero":false},"height":200,"toolTip":{"shared":true,"contentFormatter": function (e) { var content = " "; for (var i = 0; i < e.entries.length; i++) { content += "<strong>" + e.entries[i].dataSeries.name + "</strong>" + ": " + e.entries[i].dataPoint.y; content += "<br/>"; } return content; } },"data":[{"type":"line","color":"darkOrchid","name":"function coverage","dataPoints":[{"y":100},{"y":100},{"y":100},{"y":100},{"y":100},{"y":100},{"y":100},{"y":100},{"y":80.77},{"y":80.77},{"y":80.77},{"y":80.77},{"y":77.57}]},{"type":"line","axisYType":"secondary","color":"transparent","name":"execution time (s)","dataPoints":[{"y":0},{"y":56.641},{"y":56.048},{"y":58.77},{"y":61.871},{"y":61.097},{"y":76.085},{"y":60.353},{"y":63.847},{"y":48.72},{"y":46.507},{"y":42.365},{"y":45.51}]}]});
+      functionChartContainer.render();
+  
+      var statementChartContainer = new CanvasJS.Chart("statementChartContainer", {"animationEnabled":true,"backgroundColor":"#fafad2","axisY":{"title":"statement coverage","lineColor":"darkOrchid","includeZero":false},"axisY2":{"title":"execution time (s)","lineColor":"indigo","includeZero":false},"height":200,"toolTip":{"shared":true,"contentFormatter": function (e) { var content = " "; for (var i = 0; i < e.entries.length; i++) { content += "<strong>" + e.entries[i].dataSeries.name + "</strong>" + ": " + e.entries[i].dataPoint.y; content += "<br/>"; } return content; } },"data":[{"type":"line","color":"darkOrchid","name":"statement coverage","dataPoints":[{"y":100},{"y":100},{"y":100},{"y":100},{"y":100},{"y":100},{"y":100},{"y":100},{"y":77.74},{"y":77.74},{"y":77.74},{"y":77.74},{"y":76.13}]},{"type":"line","axisYType":"secondary","color":"transparent","name":"execution time (s)","dataPoints":[{"y":0},{"y":56.641},{"y":56.048},{"y":58.77},{"y":61.871},{"y":61.097},{"y":76.085},{"y":60.353},{"y":63.847},{"y":48.72},{"y":46.507},{"y":42.365},{"y":45.51}]}]});
+      statementChartContainer.render();
+  
+    </script>
+
+<script>
+    function showBuildHistoricalData() {
+      document.getElementById('lastBuild').style.display = 'none';
+      document.getElementById('buildHistoryLink').style.display = 'none';
+      document.getElementById('buildHistory').style.display = 'block';
+      document.getElementById('lastBuildLink').style.display = 'block';
+    }
+
+    function showLastBuild() {
+      document.getElementById('lastBuild').style.display = 'block';
+      document.getElementById('buildHistoryLink').style.display = 'block';
+      document.getElementById('buildHistory').style.display = 'none';
+      document.getElementById('lastBuildLink').style.display = 'none';
+    }
+
+    function showAccessibilityHistoricalData() {
+      document.getElementById('lastAccessibility').style.display = 'none';
+      document.getElementById('accessibilityHistoryLink').style.display = 'none';
+      document.getElementById('accessibilityHistory').style.display = 'block';
+      document.getElementById('lastAccessibilityLink').style.display = 'block';
+    }
+
+    function showLastAccessibility() {
+      document.getElementById('lastAccessibility').style.display = 'block';
+      document.getElementById('accessibilityHistoryLink').style.display = 'block';
+      document.getElementById('accessibilityHistory').style.display = 'none';
+      document.getElementById('lastAccessibilityLink').style.display = 'none';
+    }
+
+    function showTslintHistoricalData() {
+      document.getElementById('lastTslint').style.display = 'none';
+      document.getElementById('tslintHistoryLink').style.display = 'none';
+      document.getElementById('tslintHistory').style.display = 'block';
+      document.getElementById('lastTslintLink').style.display = 'block';
+    }
+
+    function showLastTslint() {
+      document.getElementById('lastTslint').style.display = 'block';
+      document.getElementById('tslintHistoryLink').style.display = 'block';
+      document.getElementById('tslintHistory').style.display = 'none';
+      document.getElementById('lastTslintLink').style.display = 'none';
+    }
+
+    function showJscpdHistoricalData() {
+      document.getElementById('lastJscpd').style.display = 'none';
+      document.getElementById('jscpdHistoryLink').style.display = 'none';
+      document.getElementById('jscpdHistory').style.display = 'block';
+      document.getElementById('lastJscpdLink').style.display = 'block';
+    }
+
+    function showLastJscpd() {
+      document.getElementById('lastJscpd').style.display = 'block';
+      document.getElementById('jscpdHistoryLink').style.display = 'block';
+      document.getElementById('jscpdHistory').style.display = 'none';
+      document.getElementById('lastJscpdLink').style.display = 'none';
+    }
+
+    function showLineHistoricalData() {
+      document.getElementById('lastLine').style.display = 'none';
+      document.getElementById('lineHistoryLink').style.display = 'none';
+      document.getElementById('lineHistory').style.display = 'block';
+      document.getElementById('lastLineLink').style.display = 'block';
+    }
+
+    function showLastLine() {
+      document.getElementById('lastLine').style.display = 'block';
+      document.getElementById('lineHistoryLink').style.display = 'block';
+      document.getElementById('lineHistory').style.display = 'none';
+      document.getElementById('lastLineLink').style.display = 'none';
+    }
+
+    function showBranchHistoricalData() {
+      document.getElementById('lastBranch').style.display = 'none';
+      document.getElementById('branchHistoryLink').style.display = 'none';
+      document.getElementById('branchHistory').style.display = 'block';
+      document.getElementById('lastBranchLink').style.display = 'block';
+    }
+
+    function showLastBranch() {
+      document.getElementById('lastBranch').style.display = 'block';
+      document.getElementById('branchHistoryLink').style.display = 'block';
+      document.getElementById('branchHistory').style.display = 'none';
+      document.getElementById('lastBranchLink').style.display = 'none';
+    }
+
+    function showFunctionHistoricalData() {
+      document.getElementById('lastFunction').style.display = 'none';
+      document.getElementById('functionHistoryLink').style.display = 'none';
+      document.getElementById('functionHistory').style.display = 'block';
+      document.getElementById('lastFunctionLink').style.display = 'block';
+    }
+
+    function showLastFunction() {
+      document.getElementById('lastFunction').style.display = 'block';
+      document.getElementById('functionHistoryLink').style.display = 'block';
+      document.getElementById('functionHistory').style.display = 'none';
+      document.getElementById('lastFunctionLink').style.display = 'none';
+    }
+
+    function showStatementHistoricalData() {
+      document.getElementById('lastStatement').style.display = 'none';
+      document.getElementById('statementHistoryLink').style.display = 'none';
+      document.getElementById('statementHistory').style.display = 'block';
+      document.getElementById('lastStatementLink').style.display = 'block';
+    }
+
+    function showLastStatement() {
+      document.getElementById('lastStatement').style.display = 'block';
+      document.getElementById('statementHistoryLink').style.display = 'block';
+      document.getElementById('statementHistory').style.display = 'none';
+      document.getElementById('lastStatementLink').style.display = 'none';
+    }
+
+    function showAllHistoricalData() {
+      document.getElementById('allHistoryLink').style.display = 'none';
+      document.getElementById('lastAllLink').style.display = 'block';
+      showBuildHistoricalData();
+      showAccessibilityHistoricalData();
+      showTslintHistoricalData();
+      showJscpdHistoricalData();
+      showLineHistoricalData();
+      showBranchHistoricalData();
+      showFunctionHistoricalData();
+      showStatementHistoricalData();
+    }
+
+    function showLastAll() {
+      document.getElementById('allHistoryLink').style.display = 'block';
+      document.getElementById('lastAllLink').style.display = 'none';
+      showLastBuild();
+      showLastAccessibility();
+      showLastTslint();
+      showLastJscpd();
+      showLastLine();
+      showLastBranch();
+      showLastFunction();
+      showLastStatement();
+    }
+
+  </script>
+    
+  </html>

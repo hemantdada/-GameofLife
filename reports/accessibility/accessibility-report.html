@@ -1,0 +1,1117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <title>Accessibility Report</title>
+    <style>
+        .badge-success {
+            background-color: green;
+        }
+        .badge-notice {
+            background-color:yellow;
+            color: black
+        }
+        .badge-warning {
+            background-color: orange;
+            color: black
+        }
+        .badge-error {
+            background-color: red;
+            color: black
+        }
+        .error-div span {
+            padding: 10px;
+        }
+        div {
+            word-wrap: break-word;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-center">Accessibility Error Report</h1>
+        <div style="text-align: center;">
+            <div class="col-lg-4">Errors: <span class="badge badge-error">10</span></div>
+            <div class="col-lg-4">Warnings: <span class="badge badge-warning">31</span></div>
+            <div class="col-lg-4">Notices: <span class="badge badge-notice">28</span></div>
+        </div>
+        <hr>
+        <div class="row error-div">
+            <span class="col-lg-1">No.</span>
+            <span class="col-lg-7">File Path</span>
+            <span class="col-lg-1">Error</span>
+            <span class="col-lg-1">Warning</span>
+            <span class="col-lg-1 col-lg-pull-1 col-lg-offset-1">Notice</span>
+        </div>
+
+        <div>
+            <div class="row error-div">
+                <span class="col-lg-1">1</span>
+                <span class="col-lg-7">F:/TCS Test/-GameofLife/src/app/app.component.html</span>
+                <span class="col-lg-1">0</span>
+                <span class="col-lg-1">0</span>
+                <span class="col-lg-1">0</span>
+                <span class="col-lg-1"><button id="button1" onclick="expandTable(1)">Expand</button></span>
+            </div>
+            <div id="detail1" class="col-lg-12" style="display: none">
+                <div>
+                    <div class="col-lg-2"><strong>Severity</strong></div>
+                    <div class="col-lg-2"><strong>Issue</strong></div>
+                    <div class="col-lg-3"><strong>Description</strong></div>
+                    <div class="col-lg-4"><strong>Element</strong></div>
+                    <div class="col-lg-1"><strong>Pos</strong></div>
+                </div>
+                <br>
+            </div>
+        </div>
+        <div>
+            <div class="row error-div">
+                <span class="col-lg-1">2</span>
+                <span class="col-lg-7">F:/TCS Test/-GameofLife/src/app/core/components/home/home.component.html</span>
+                <span class="col-lg-1">0</span>
+                <span class="col-lg-1">3</span>
+                <span class="col-lg-1">0</span>
+                <span class="col-lg-1"><button id="button2" onclick="expandTable(2)">Expand</button></span>
+            </div>
+            <div id="detail2" class="col-lg-12" style="display: none">
+                <div>
+                    <div class="col-lg-2"><strong>Severity</strong></div>
+                    <div class="col-lg-2"><strong>Issue</strong></div>
+                    <div class="col-lg-3"><strong>Description</strong></div>
+                    <div class="col-lg-4"><strong>Element</strong></div>
+                    <div class="col-lg-1"><strong>Pos</strong></div>
+                </div>
+                <br>
+                <div style="border: 1px black solid; display: flex;" class="col-lg-12">
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-2">WARNING</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-2">WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.BgImage</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-3">This element&#x27;s text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 7:1.</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-4">&lt;h1&gt;
+    Welcome to Game of Life!
+  &lt;/h1&gt;</div>
+                    <div class="col-lg-1">
+                        <div>Line: 1</div>
+                        <div>Col: 0</div>
+                    </div>
+                </div>
+                <div style="border: 1px black solid; display: flex;" class="col-lg-12">
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-2">WARNING</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-2">WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.BgImage</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-3">This element&#x27;s text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 7:1.</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-4">&lt;p&gt;This is the Home page&lt;/p&gt;</div>
+                    <div class="col-lg-1">
+                        <div>Line: 7</div>
+                        <div>Col: 2</div>
+                    </div>
+                </div>
+                <div style="border: 1px black solid; display: flex;" class="col-lg-12">
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-2">WARNING</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-2">WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.BgImage</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-3">This element&#x27;s text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 7:1.</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-4">&lt;h2&gt;Please click on &#x27;lazy loaded&#x27; in the Nav bar to load the Game of Life&lt;/h2&gt;</div>
+                    <div class="col-lg-1">
+                        <div>Line: 8</div>
+                        <div>Col: 2</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="row error-div">
+                <span class="col-lg-1">3</span>
+                <span class="col-lg-7">F:/TCS Test/-GameofLife/src/app/core/components/navbar/navbar.component.html</span>
+                <span class="col-lg-1">0</span>
+                <span class="col-lg-1">8</span>
+                <span class="col-lg-1">4</span>
+                <span class="col-lg-1"><button id="button3" onclick="expandTable(3)">Expand</button></span>
+            </div>
+            <div id="detail3" class="col-lg-12" style="display: none">
+                <div>
+                    <div class="col-lg-2"><strong>Severity</strong></div>
+                    <div class="col-lg-2"><strong>Issue</strong></div>
+                    <div class="col-lg-3"><strong>Description</strong></div>
+                    <div class="col-lg-4"><strong>Element</strong></div>
+                    <div class="col-lg-1"><strong>Pos</strong></div>
+                </div>
+                <br>
+                <div style="border: 1px black solid; display: flex;" class="col-lg-12">
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-2">WARNING</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-2">WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.BgImage</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-3">This element&#x27;s text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 7:1.</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-4">&lt;a class&#x3D;&quot;navbar-brand&quot; routerlink&#x3D;&quot;/&quot;&gt;Angular-6-Starter&lt;/a&gt;</div>
+                    <div class="col-lg-1">
+                        <div>Line: 1</div>
+                        <div>Col: 0</div>
+                    </div>
+                </div>
+                <div style="border: 1px black solid; display: flex;" class="col-lg-12">
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-2">WARNING</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-2">WCAG2AAA.Principle4.Guideline4_1.4_1_2.H91.A.Placeholder</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-3">Anchor element found with link content, but no href, ID or name attribute has been supplied.</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-4">&lt;a class&#x3D;&quot;navbar-brand&quot; routerlink&#x3D;&quot;/&quot;&gt;Angular-6-Starter&lt;/a&gt;</div>
+                    <div class="col-lg-1">
+                        <div>Line: 1</div>
+                        <div>Col: 0</div>
+                    </div>
+                </div>
+                <div style="border: 1px black solid; display: flex;" class="col-lg-12">
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-2">NOTICE</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-2">WCAG2AAA.Principle2.Guideline2_4.2_4_9.H30</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-3">Check that text of the link describes the purpose of the link.</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-4">&lt;a class&#x3D;&quot;navbar-brand&quot; routerlink&#x3D;&quot;/&quot;&gt;Angular-6-Starter&lt;/a&gt;</div>
+                    <div class="col-lg-1">
+                        <div>Line: 1</div>
+                        <div>Col: 0</div>
+                    </div>
+                </div>
+                <div style="border: 1px black solid; display: flex;" class="col-lg-12">
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-2">NOTICE</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-2">WCAG2AAA.Principle3.Guideline3_2.3_2_1.G107</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-3">Check that a change of context does not occur when this input field receives focus.</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-4">&lt;button class&#x3D;&quot;navbar-toggler&quot; type&#x3D;&quot;button&quot; data-toggle&#x3D;&quot;collapse&quot; data-target&#x3D;&quot;#navbarSupportedContent&quot; aria-controls&#x3D;&quot;navbarSupportedContent&quot; aria-expanded&#x3D;&quot;false&quot; aria-label&#x3D;&quot;Toggle navigation&quot;&gt;
+    &lt;span class&#x3D;&quot;navbar-toggler-icon&quot;&gt;&lt;/span&gt;
+  &lt;/button&gt;</div>
+                    <div class="col-lg-1">
+                        <div>Line: 1</div>
+                        <div>Col: 0</div>
+                    </div>
+                </div>
+                <div style="border: 1px black solid; display: flex;" class="col-lg-12">
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-2">WARNING</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-2">WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.BgImage</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-3">This element&#x27;s text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 7:1.</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-4">&lt;a class&#x3D;&quot;nav-link&quot; routerlink&#x3D;&quot;/&quot;&gt;Home&lt;span class&#x3D;&quot;sr-only&quot;&gt;(current)&lt;/span&gt;&lt;/a&gt;</div>
+                    <div class="col-lg-1">
+                        <div>Line: 1</div>
+                        <div>Col: 0</div>
+                    </div>
+                </div>
+                <div style="border: 1px black solid; display: flex;" class="col-lg-12">
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-2">WARNING</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-2">WCAG2AAA.Principle4.Guideline4_1.4_1_2.H91.A.Placeholder</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-3">Anchor element found with link content, but no href, ID or name attribute has been supplied.</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-4">&lt;a class&#x3D;&quot;nav-link&quot; routerlink&#x3D;&quot;/&quot;&gt;Home&lt;span class&#x3D;&quot;sr-only&quot;&gt;(current)&lt;/span&gt;&lt;/a&gt;</div>
+                    <div class="col-lg-1">
+                        <div>Line: 1</div>
+                        <div>Col: 0</div>
+                    </div>
+                </div>
+                <div style="border: 1px black solid; display: flex;" class="col-lg-12">
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-2">NOTICE</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-2">WCAG2AAA.Principle2.Guideline2_4.2_4_9.H30</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-3">Check that text of the link describes the purpose of the link.</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-4">&lt;a class&#x3D;&quot;nav-link&quot; routerlink&#x3D;&quot;/&quot;&gt;Home&lt;span class&#x3D;&quot;sr-only&quot;&gt;(current)&lt;/span&gt;&lt;/a&gt;</div>
+                    <div class="col-lg-1">
+                        <div>Line: 1</div>
+                        <div>Col: 0</div>
+                    </div>
+                </div>
+                <div style="border: 1px black solid; display: flex;" class="col-lg-12">
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-2">WARNING</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-2">WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.BgImage</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-3">This element&#x27;s text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 7:1.</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-4">&lt;span class&#x3D;&quot;sr-only&quot;&gt;(current)&lt;/span&gt;</div>
+                    <div class="col-lg-1">
+                        <div>Line: 12</div>
+                        <div>Col: 47</div>
+                    </div>
+                </div>
+                <div style="border: 1px black solid; display: flex;" class="col-lg-12">
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-2">WARNING</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-2">WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.BgImage</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-3">This element&#x27;s text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 7:1.</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-4">&lt;a class&#x3D;&quot;nav-link&quot; routerlink&#x3D;&quot;/lazy-load&quot;&gt;Lazy Loaded&lt;span class&#x3D;&quot;sr-only&quot;&gt;(current)&lt;/span&gt;&lt;/a&gt;</div>
+                    <div class="col-lg-1">
+                        <div>Line: 1</div>
+                        <div>Col: 0</div>
+                    </div>
+                </div>
+                <div style="border: 1px black solid; display: flex;" class="col-lg-12">
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-2">WARNING</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-2">WCAG2AAA.Principle4.Guideline4_1.4_1_2.H91.A.Placeholder</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-3">Anchor element found with link content, but no href, ID or name attribute has been supplied.</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-4">&lt;a class&#x3D;&quot;nav-link&quot; routerlink&#x3D;&quot;/lazy-load&quot;&gt;Lazy Loaded&lt;span class&#x3D;&quot;sr-only&quot;&gt;(current)&lt;/span&gt;&lt;/a&gt;</div>
+                    <div class="col-lg-1">
+                        <div>Line: 1</div>
+                        <div>Col: 0</div>
+                    </div>
+                </div>
+                <div style="border: 1px black solid; display: flex;" class="col-lg-12">
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-2">NOTICE</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-2">WCAG2AAA.Principle2.Guideline2_4.2_4_9.H30</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-3">Check that text of the link describes the purpose of the link.</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-4">&lt;a class&#x3D;&quot;nav-link&quot; routerlink&#x3D;&quot;/lazy-load&quot;&gt;Lazy Loaded&lt;span class&#x3D;&quot;sr-only&quot;&gt;(current)&lt;/span&gt;&lt;/a&gt;</div>
+                    <div class="col-lg-1">
+                        <div>Line: 1</div>
+                        <div>Col: 0</div>
+                    </div>
+                </div>
+                <div style="border: 1px black solid; display: flex;" class="col-lg-12">
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-2">WARNING</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-2">WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.BgImage</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-3">This element&#x27;s text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 7:1.</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-4">&lt;span class&#x3D;&quot;sr-only&quot;&gt;(current)&lt;/span&gt;</div>
+                    <div class="col-lg-1">
+                        <div>Line: 12</div>
+                        <div>Col: 47</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="row error-div">
+                <span class="col-lg-1">4</span>
+                <span class="col-lg-7">F:/TCS Test/-GameofLife/src/app/core/components/spinner/spinner.component.html</span>
+                <span class="col-lg-1">0</span>
+                <span class="col-lg-1">0</span>
+                <span class="col-lg-1">0</span>
+                <span class="col-lg-1"><button id="button4" onclick="expandTable(4)">Expand</button></span>
+            </div>
+            <div id="detail4" class="col-lg-12" style="display: none">
+                <div>
+                    <div class="col-lg-2"><strong>Severity</strong></div>
+                    <div class="col-lg-2"><strong>Issue</strong></div>
+                    <div class="col-lg-3"><strong>Description</strong></div>
+                    <div class="col-lg-4"><strong>Element</strong></div>
+                    <div class="col-lg-1"><strong>Pos</strong></div>
+                </div>
+                <br>
+            </div>
+        </div>
+        <div>
+            <div class="row error-div">
+                <span class="col-lg-1">5</span>
+                <span class="col-lg-7">F:/TCS Test/-GameofLife/src/app/lazy-load/components/home/home.component.html</span>
+                <span class="col-lg-1">10</span>
+                <span class="col-lg-1">19</span>
+                <span class="col-lg-1">22</span>
+                <span class="col-lg-1"><button id="button5" onclick="expandTable(5)">Expand</button></span>
+            </div>
+            <div id="detail5" class="col-lg-12" style="display: none">
+                <div>
+                    <div class="col-lg-2"><strong>Severity</strong></div>
+                    <div class="col-lg-2"><strong>Issue</strong></div>
+                    <div class="col-lg-3"><strong>Description</strong></div>
+                    <div class="col-lg-4"><strong>Element</strong></div>
+                    <div class="col-lg-1"><strong>Pos</strong></div>
+                </div>
+                <br>
+                <div style="border: 1px black solid; display: flex;" class="col-lg-12">
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-2">WARNING</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-2">WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.BgImage</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-3">This element&#x27;s text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 7:1.</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-4">&lt;h1&gt;Game Of Life &lt;/h1&gt;</div>
+                    <div class="col-lg-1">
+                        <div>Line: 2</div>
+                        <div>Col: 0</div>
+                    </div>
+                </div>
+                <div style="border: 1px black solid; display: flex;" class="col-lg-12">
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-2">NOTICE</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-2">WCAG2AAA.Principle1.Guideline1_3.1_3_1.LayoutTable</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-3">This table appears to be a layout table. If it is meant to instead be a data table, ensure header cells are identified using th elements.</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-4">&lt;table class&#x3D;&quot;table table-hover&quot; *ngif&#x3D;&quot;this.gameOflife.mygrid !&#x3D; undefined&quot;&gt;
+      &lt;thead&gt;
+      &lt;/thead&gt;
+      &lt;tbody&gt;&lt;/tbody&gt;
+      &lt;tbody&gt;&lt;tr *ngfor&#x3D;&quot;let a of this.gameOflife.mygrid.getRows(); let rowindex &#x3D; index&quot;&gt;
+        &lt;td *ngfor&#x3D;&quot;let b of this.gameOflife.mygrid.getColumn(); let colindex &#x3D; index&quot; (click)&#x3D;&quot;SavePattern(rowindex,colindex)&quot; [ngclass]&#x3D;&quot;(gameOflife.mygrid.myarray[rowindex][colindex]!&#x3D; 0)?&#x27;Active&#x27;:&#x27;NotActive&#x27;&quot;&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;</div>
+                    <div class="col-lg-1">
+                        <div>Line: 1</div>
+                        <div>Col: 0</div>
+                    </div>
+                </div>
+                <div style="border: 1px black solid; display: flex;" class="col-lg-12">
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-2">WARNING</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-2">WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.BgImage</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-3">This element&#x27;s text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 7:1.</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-4">&lt;button type&#x3D;&quot;submit&quot; class&#x3D;&quot;btn btn-success&quot; [disabled]&#x3D;&quot;this.gameOflife.currentState&#x3D;&#x3D;1&quot; (click)&#x3D;&quot;StartClick()&quot;&gt;start&lt;/button&gt;</div>
+                    <div class="col-lg-1">
+                        <div>Line: 1</div>
+                        <div>Col: 0</div>
+                    </div>
+                </div>
+                <div style="border: 1px black solid; display: flex;" class="col-lg-12">
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-2">NOTICE</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-2">WCAG2AAA.Principle3.Guideline3_2.3_2_1.G107</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-3">Check that a change of context does not occur when this input field receives focus.</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-4">&lt;button type&#x3D;&quot;submit&quot; class&#x3D;&quot;btn btn-success&quot; [disabled]&#x3D;&quot;this.gameOflife.currentState&#x3D;&#x3D;1&quot; (click)&#x3D;&quot;StartClick()&quot;&gt;start&lt;/button&gt;</div>
+                    <div class="col-lg-1">
+                        <div>Line: 1</div>
+                        <div>Col: 0</div>
+                    </div>
+                </div>
+                <div style="border: 1px black solid; display: flex;" class="col-lg-12">
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-2">WARNING</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-2">WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.BgImage</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-3">This element&#x27;s text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 7:1.</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-4">&lt;button type&#x3D;&quot;submit&quot; class&#x3D;&quot;btn btn-success&quot; [disabled]&#x3D;&quot;this.gameOflife.currentState&#x3D;&#x3D;0&quot; (click)&#x3D;&quot;Stopclick()&quot;&gt;Stop&lt;/button&gt;</div>
+                    <div class="col-lg-1">
+                        <div>Line: 1</div>
+                        <div>Col: 0</div>
+                    </div>
+                </div>
+                <div style="border: 1px black solid; display: flex;" class="col-lg-12">
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-2">NOTICE</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-2">WCAG2AAA.Principle3.Guideline3_2.3_2_1.G107</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-3">Check that a change of context does not occur when this input field receives focus.</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-4">&lt;button type&#x3D;&quot;submit&quot; class&#x3D;&quot;btn btn-success&quot; [disabled]&#x3D;&quot;this.gameOflife.currentState&#x3D;&#x3D;0&quot; (click)&#x3D;&quot;Stopclick()&quot;&gt;Stop&lt;/button&gt;</div>
+                    <div class="col-lg-1">
+                        <div>Line: 1</div>
+                        <div>Col: 0</div>
+                    </div>
+                </div>
+                <div style="border: 1px black solid; display: flex;" class="col-lg-12">
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-2">WARNING</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-2">WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.BgImage</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-3">This element&#x27;s text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 7:1.</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-4">&lt;button type&#x3D;&quot;submit&quot; class&#x3D;&quot;btn btn-success&quot; (click)&#x3D;&quot;selectPattern()&quot;&gt;Select Pattern&lt;/button&gt;</div>
+                    <div class="col-lg-1">
+                        <div>Line: 1</div>
+                        <div>Col: 0</div>
+                    </div>
+                </div>
+                <div style="border: 1px black solid; display: flex;" class="col-lg-12">
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-2">NOTICE</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-2">WCAG2AAA.Principle3.Guideline3_2.3_2_1.G107</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-3">Check that a change of context does not occur when this input field receives focus.</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-4">&lt;button type&#x3D;&quot;submit&quot; class&#x3D;&quot;btn btn-success&quot; (click)&#x3D;&quot;selectPattern()&quot;&gt;Select Pattern&lt;/button&gt;</div>
+                    <div class="col-lg-1">
+                        <div>Line: 1</div>
+                        <div>Col: 0</div>
+                    </div>
+                </div>
+                <div style="border: 1px black solid; display: flex;" class="col-lg-12">
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-2">WARNING</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-2">WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.BgImage</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-3">This element&#x27;s text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 7:1.</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-4">&lt;button type&#x3D;&quot;submit&quot; class&#x3D;&quot;btn btn-success&quot; (click)&#x3D;&quot;StartSelectedPattern()&quot;&gt;Start With Selected Pattern&lt;/button&gt;</div>
+                    <div class="col-lg-1">
+                        <div>Line: 1</div>
+                        <div>Col: 0</div>
+                    </div>
+                </div>
+                <div style="border: 1px black solid; display: flex;" class="col-lg-12">
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-2">NOTICE</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-2">WCAG2AAA.Principle3.Guideline3_2.3_2_1.G107</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-3">Check that a change of context does not occur when this input field receives focus.</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-4">&lt;button type&#x3D;&quot;submit&quot; class&#x3D;&quot;btn btn-success&quot; (click)&#x3D;&quot;StartSelectedPattern()&quot;&gt;Start With Selected Pattern&lt;/button&gt;</div>
+                    <div class="col-lg-1">
+                        <div>Line: 1</div>
+                        <div>Col: 0</div>
+                    </div>
+                </div>
+                <div style="border: 1px black solid; display: flex;" class="col-lg-12">
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-2">WARNING</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-2">WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.BgImage</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-3">This element&#x27;s text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 7:1.</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-4">&lt;h1&gt;Select other Pattern &lt;/h1&gt;</div>
+                    <div class="col-lg-1">
+                        <div>Line: 36</div>
+                        <div>Col: 6</div>
+                    </div>
+                </div>
+                <div style="border: 1px black solid; display: flex;" class="col-lg-12">
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-2">WARNING</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-2">WCAG2AAA.Principle1.Guideline1_3.1_3_1.H71.SameName</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-3">If these radio buttons or check boxes require a further group-level description, they should be contained within a fieldset element.</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-4">&lt;form id&#x3D;&quot;loadpatter&quot; name&#x3D;&quot;loadpatter&quot; #frmloadpatter&#x3D;&quot;ngForm&quot; novalidate&#x3D;&quot;&quot;&gt;
+        &lt;div class&#x3D;&quot;form-group&quot;&gt; &lt;input type&#x3D;&quot;radio&quot; name&#x3D;&quot;options&quot; [value]&#x3D;&quot;false&quot; value&#x3D;&quot;0&quot; [(ngmodel)]&#x3D;&quot;gameOflife.patterns&quot;&gt;
+          MyShape
+          &lt;input type&#x3D;&quot;radio&quot; name&#x3D;&quot;options&quot; [value]&#x3D;&quot;true&quot; [(ngmodel)]&#x3D;&quot;gameOflife.patterns&quot;&gt; random
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;form-group&quot;&gt;
+          &lt;button type&#x3D;&quot;submit&quot; class&#x3D;&quot;btn btn-success&quot; (click)&#x3D;&quot;LoadPattern()&quot;&gt;Load Pattern&lt;/button&gt;
+        &lt;/div&gt;
+      &lt;/form&gt;</div>
+                    <div class="col-lg-1">
+                        <div>Line: 1</div>
+                        <div>Col: 0</div>
+                    </div>
+                </div>
+                <div style="border: 1px black solid; display: flex;" class="col-lg-12">
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-2">NOTICE</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-2">WCAG2AAA.Principle3.Guideline3_3.3_3_1.G83,G84,G85</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-3">If an input error is automatically detected in this form, check that the item(s) in error are identified and the error(s) are described to the user in text.</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-4">&lt;form id&#x3D;&quot;loadpatter&quot; name&#x3D;&quot;loadpatter&quot; #frmloadpatter&#x3D;&quot;ngForm&quot; novalidate&#x3D;&quot;&quot;&gt;
+        &lt;div class&#x3D;&quot;form-group&quot;&gt; &lt;input type&#x3D;&quot;radio&quot; name&#x3D;&quot;options&quot; [value]&#x3D;&quot;false&quot; value&#x3D;&quot;0&quot; [(ngmodel)]&#x3D;&quot;gameOflife.patterns&quot;&gt;
+          MyShape
+          &lt;input type&#x3D;&quot;radio&quot; name&#x3D;&quot;options&quot; [value]&#x3D;&quot;true&quot; [(ngmodel)]&#x3D;&quot;gameOflife.patterns&quot;&gt; random
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;form-group&quot;&gt;
+          &lt;button type&#x3D;&quot;submit&quot; class&#x3D;&quot;btn btn-success&quot; (click)&#x3D;&quot;LoadPattern()&quot;&gt;Load Pattern&lt;/button&gt;
+        &lt;/div&gt;
+      &lt;/form&gt;</div>
+                    <div class="col-lg-1">
+                        <div>Line: 1</div>
+                        <div>Col: 0</div>
+                    </div>
+                </div>
+                <div style="border: 1px black solid; display: flex;" class="col-lg-12">
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-2">NOTICE</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-2">WCAG2AAA.Principle3.Guideline3_3.3_3_2.G131,G89,G184,H90</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-3">Check that descriptive labels or instructions (including for required fields) are provided for user input in this form.</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-4">&lt;form id&#x3D;&quot;loadpatter&quot; name&#x3D;&quot;loadpatter&quot; #frmloadpatter&#x3D;&quot;ngForm&quot; novalidate&#x3D;&quot;&quot;&gt;
+        &lt;div class&#x3D;&quot;form-group&quot;&gt; &lt;input type&#x3D;&quot;radio&quot; name&#x3D;&quot;options&quot; [value]&#x3D;&quot;false&quot; value&#x3D;&quot;0&quot; [(ngmodel)]&#x3D;&quot;gameOflife.patterns&quot;&gt;
+          MyShape
+          &lt;input type&#x3D;&quot;radio&quot; name&#x3D;&quot;options&quot; [value]&#x3D;&quot;true&quot; [(ngmodel)]&#x3D;&quot;gameOflife.patterns&quot;&gt; random
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;form-group&quot;&gt;
+          &lt;button type&#x3D;&quot;submit&quot; class&#x3D;&quot;btn btn-success&quot; (click)&#x3D;&quot;LoadPattern()&quot;&gt;Load Pattern&lt;/button&gt;
+        &lt;/div&gt;
+      &lt;/form&gt;</div>
+                    <div class="col-lg-1">
+                        <div>Line: 1</div>
+                        <div>Col: 0</div>
+                    </div>
+                </div>
+                <div style="border: 1px black solid; display: flex;" class="col-lg-12">
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-2">NOTICE</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-2">WCAG2AAA.Principle3.Guideline3_3.3_3_3.G177</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-3">Check that this form provides suggested corrections to errors in user input, unless it would jeopardize the security or purpose of the content.</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-4">&lt;form id&#x3D;&quot;loadpatter&quot; name&#x3D;&quot;loadpatter&quot; #frmloadpatter&#x3D;&quot;ngForm&quot; novalidate&#x3D;&quot;&quot;&gt;
+        &lt;div class&#x3D;&quot;form-group&quot;&gt; &lt;input type&#x3D;&quot;radio&quot; name&#x3D;&quot;options&quot; [value]&#x3D;&quot;false&quot; value&#x3D;&quot;0&quot; [(ngmodel)]&#x3D;&quot;gameOflife.patterns&quot;&gt;
+          MyShape
+          &lt;input type&#x3D;&quot;radio&quot; name&#x3D;&quot;options&quot; [value]&#x3D;&quot;true&quot; [(ngmodel)]&#x3D;&quot;gameOflife.patterns&quot;&gt; random
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;form-group&quot;&gt;
+          &lt;button type&#x3D;&quot;submit&quot; class&#x3D;&quot;btn btn-success&quot; (click)&#x3D;&quot;LoadPattern()&quot;&gt;Load Pattern&lt;/button&gt;
+        &lt;/div&gt;
+      &lt;/form&gt;</div>
+                    <div class="col-lg-1">
+                        <div>Line: 1</div>
+                        <div>Col: 0</div>
+                    </div>
+                </div>
+                <div style="border: 1px black solid; display: flex;" class="col-lg-12">
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-2">NOTICE</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-2">WCAG2AAA.Principle3.Guideline3_3.3_3_5.G71,G184,G193</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-3">Check that context-sensitive help is available for this form, at a Web-page and/or control level.</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-4">&lt;form id&#x3D;&quot;loadpatter&quot; name&#x3D;&quot;loadpatter&quot; #frmloadpatter&#x3D;&quot;ngForm&quot; novalidate&#x3D;&quot;&quot;&gt;
+        &lt;div class&#x3D;&quot;form-group&quot;&gt; &lt;input type&#x3D;&quot;radio&quot; name&#x3D;&quot;options&quot; [value]&#x3D;&quot;false&quot; value&#x3D;&quot;0&quot; [(ngmodel)]&#x3D;&quot;gameOflife.patterns&quot;&gt;
+          MyShape
+          &lt;input type&#x3D;&quot;radio&quot; name&#x3D;&quot;options&quot; [value]&#x3D;&quot;true&quot; [(ngmodel)]&#x3D;&quot;gameOflife.patterns&quot;&gt; random
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;form-group&quot;&gt;
+          &lt;button type&#x3D;&quot;submit&quot; class&#x3D;&quot;btn btn-success&quot; (click)&#x3D;&quot;LoadPattern()&quot;&gt;Load Pattern&lt;/button&gt;
+        &lt;/div&gt;
+      &lt;/form&gt;</div>
+                    <div class="col-lg-1">
+                        <div>Line: 1</div>
+                        <div>Col: 0</div>
+                    </div>
+                </div>
+                <div style="border: 1px black solid; display: flex;" class="col-lg-12">
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-2">NOTICE</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-2">WCAG2AAA.Principle3.Guideline3_3.3_3_6.G98,G99,G155,G164,G168.AllForms</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-3">Check that submissions to this form are either reversible, checked for input errors, and/or confirmed by the user.</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-4">&lt;form id&#x3D;&quot;loadpatter&quot; name&#x3D;&quot;loadpatter&quot; #frmloadpatter&#x3D;&quot;ngForm&quot; novalidate&#x3D;&quot;&quot;&gt;
+        &lt;div class&#x3D;&quot;form-group&quot;&gt; &lt;input type&#x3D;&quot;radio&quot; name&#x3D;&quot;options&quot; [value]&#x3D;&quot;false&quot; value&#x3D;&quot;0&quot; [(ngmodel)]&#x3D;&quot;gameOflife.patterns&quot;&gt;
+          MyShape
+          &lt;input type&#x3D;&quot;radio&quot; name&#x3D;&quot;options&quot; [value]&#x3D;&quot;true&quot; [(ngmodel)]&#x3D;&quot;gameOflife.patterns&quot;&gt; random
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;form-group&quot;&gt;
+          &lt;button type&#x3D;&quot;submit&quot; class&#x3D;&quot;btn btn-success&quot; (click)&#x3D;&quot;LoadPattern()&quot;&gt;Load Pattern&lt;/button&gt;
+        &lt;/div&gt;
+      &lt;/form&gt;</div>
+                    <div class="col-lg-1">
+                        <div>Line: 1</div>
+                        <div>Col: 0</div>
+                    </div>
+                </div>
+                <div style="border: 1px black solid; display: flex;" class="col-lg-12">
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-2">WARNING</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-2">WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.BgImage</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-3">This element&#x27;s text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 7:1.</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-4">&lt;div class&#x3D;&quot;form-group&quot;&gt; &lt;input type&#x3D;&quot;radio&quot; name&#x3D;&quot;options&quot; [value]&#x3D;&quot;false&quot; value&#x3D;&quot;0&quot; [(ngmodel)]&#x3D;&quot;gameOflife.patterns&quot;&gt;
+          MyShape
+          &lt;input type&#x3D;&quot;radio&quot; name&#x3D;&quot;options&quot; [value]&#x3D;&quot;true&quot; [(ngmodel)]&#x3D;&quot;gameOflife.patterns&quot;&gt; random
+        &lt;/div&gt;</div>
+                    <div class="col-lg-1">
+                        <div>Line: 1</div>
+                        <div>Col: 0</div>
+                    </div>
+                </div>
+                <div style="border: 1px black solid; display: flex;" class="col-lg-12">
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-2">ERROR</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-2">WCAG2AAA.Principle4.Guideline4_1.4_1_2.H91.InputRadio.Name</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-3">This radio input element does not have a name available to an accessibility API. Valid names are: label element, title attribute, aria-label attribute, aria-labelledby attribute.</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-4">&lt;input type&#x3D;&quot;radio&quot; name&#x3D;&quot;options&quot; [value]&#x3D;&quot;false&quot; value&#x3D;&quot;0&quot; [(ngmodel)]&#x3D;&quot;gameOflife.patterns&quot;&gt;</div>
+                    <div class="col-lg-1">
+                        <div>Line: 1</div>
+                        <div>Col: 0</div>
+                    </div>
+                </div>
+                <div style="border: 1px black solid; display: flex;" class="col-lg-12">
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-2">ERROR</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-2">WCAG2AAA.Principle1.Guideline1_3.1_3_1.F68</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-3">This form field should be labelled in some way. Use the label element (either with a &quot;for&quot; attribute or wrapped around the form field), or &quot;title&quot;, &quot;aria-label&quot; or &quot;aria-labelledby&quot; attributes as appropriate.</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-4">&lt;input type&#x3D;&quot;radio&quot; name&#x3D;&quot;options&quot; [value]&#x3D;&quot;false&quot; value&#x3D;&quot;0&quot; [(ngmodel)]&#x3D;&quot;gameOflife.patterns&quot;&gt;</div>
+                    <div class="col-lg-1">
+                        <div>Line: 1</div>
+                        <div>Col: 0</div>
+                    </div>
+                </div>
+                <div style="border: 1px black solid; display: flex;" class="col-lg-12">
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-2">NOTICE</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-2">WCAG2AAA.Principle3.Guideline3_2.3_2_1.G107</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-3">Check that a change of context does not occur when this input field receives focus.</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-4">&lt;input type&#x3D;&quot;radio&quot; name&#x3D;&quot;options&quot; [value]&#x3D;&quot;false&quot; value&#x3D;&quot;0&quot; [(ngmodel)]&#x3D;&quot;gameOflife.patterns&quot;&gt;</div>
+                    <div class="col-lg-1">
+                        <div>Line: 1</div>
+                        <div>Col: 0</div>
+                    </div>
+                </div>
+                <div style="border: 1px black solid; display: flex;" class="col-lg-12">
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-2">ERROR</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-2">WCAG2AAA.Principle4.Guideline4_1.4_1_2.H91.InputRadio.Name</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-3">This radio input element does not have a name available to an accessibility API. Valid names are: label element, title attribute, aria-label attribute, aria-labelledby attribute.</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-4">&lt;input type&#x3D;&quot;radio&quot; name&#x3D;&quot;options&quot; [value]&#x3D;&quot;true&quot; [(ngmodel)]&#x3D;&quot;gameOflife.patterns&quot;&gt;</div>
+                    <div class="col-lg-1">
+                        <div>Line: 1</div>
+                        <div>Col: 0</div>
+                    </div>
+                </div>
+                <div style="border: 1px black solid; display: flex;" class="col-lg-12">
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-2">ERROR</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-2">WCAG2AAA.Principle1.Guideline1_3.1_3_1.F68</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-3">This form field should be labelled in some way. Use the label element (either with a &quot;for&quot; attribute or wrapped around the form field), or &quot;title&quot;, &quot;aria-label&quot; or &quot;aria-labelledby&quot; attributes as appropriate.</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-4">&lt;input type&#x3D;&quot;radio&quot; name&#x3D;&quot;options&quot; [value]&#x3D;&quot;true&quot; [(ngmodel)]&#x3D;&quot;gameOflife.patterns&quot;&gt;</div>
+                    <div class="col-lg-1">
+                        <div>Line: 1</div>
+                        <div>Col: 0</div>
+                    </div>
+                </div>
+                <div style="border: 1px black solid; display: flex;" class="col-lg-12">
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-2">NOTICE</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-2">WCAG2AAA.Principle3.Guideline3_2.3_2_1.G107</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-3">Check that a change of context does not occur when this input field receives focus.</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-4">&lt;input type&#x3D;&quot;radio&quot; name&#x3D;&quot;options&quot; [value]&#x3D;&quot;true&quot; [(ngmodel)]&#x3D;&quot;gameOflife.patterns&quot;&gt;</div>
+                    <div class="col-lg-1">
+                        <div>Line: 1</div>
+                        <div>Col: 0</div>
+                    </div>
+                </div>
+                <div style="border: 1px black solid; display: flex;" class="col-lg-12">
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-2">WARNING</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-2">WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.BgImage</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-3">This element&#x27;s text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 7:1.</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-4">&lt;button type&#x3D;&quot;submit&quot; class&#x3D;&quot;btn btn-success&quot; (click)&#x3D;&quot;LoadPattern()&quot;&gt;Load Pattern&lt;/button&gt;</div>
+                    <div class="col-lg-1">
+                        <div>Line: 46</div>
+                        <div>Col: 10</div>
+                    </div>
+                </div>
+                <div style="border: 1px black solid; display: flex;" class="col-lg-12">
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-2">NOTICE</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-2">WCAG2AAA.Principle3.Guideline3_2.3_2_1.G107</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-3">Check that a change of context does not occur when this input field receives focus.</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-4">&lt;button type&#x3D;&quot;submit&quot; class&#x3D;&quot;btn btn-success&quot; (click)&#x3D;&quot;LoadPattern()&quot;&gt;Load Pattern&lt;/button&gt;</div>
+                    <div class="col-lg-1">
+                        <div>Line: 46</div>
+                        <div>Col: 10</div>
+                    </div>
+                </div>
+                <div style="border: 1px black solid; display: flex;" class="col-lg-12">
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-2">WARNING</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-2">WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.BgImage</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-3">This element&#x27;s text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 7:1.</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-4">&lt;h1&gt;Game Of Life&lt;/h1&gt;</div>
+                    <div class="col-lg-1">
+                        <div>Line: 54</div>
+                        <div>Col: 6</div>
+                    </div>
+                </div>
+                <div style="border: 1px black solid; display: flex;" class="col-lg-12">
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-2">NOTICE</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-2">WCAG2AAA.Principle3.Guideline3_3.3_3_1.G83,G84,G85</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-3">If an input error is automatically detected in this form, check that the item(s) in error are identified and the error(s) are described to the user in text.</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-4">&lt;form id&#x3D;&quot;gameOflife&quot; name&#x3D;&quot;gameOflife&quot; #frmgameoflife&#x3D;&quot;ngForm&quot; novalidate&#x3D;&quot;&quot;&gt;
+        &lt;div class&#x3D;&quot;form-group&quot;&gt;
+          &lt;label for&#x3D;&quot;Rows&quot;&gt; Number of Rows&lt;/label&gt;
+          &lt;input type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control&quot; id&#x3D;&quot;totalrows&quot; [ngmodeloptions]&#x3D;&quot;{standalone: true}&quot; #totalrows&#x3D;&quot;ngModel&quot; (keypress)&#x3D;&quot;numberOnly($event)&quot; [(ngmodel)]&#x3D;&quot;gameOflife.rows&quot; required&#x3D;&quot;&quot;&gt;
+          &lt;div *ngif&#x3D;&quot;totalrows.errors?.required  &amp;amp;&amp;amp; totalrows.touched&quot; class&#x3D;&quot;alert alert-danger&quot;&gt;
+            Number of Rows is required
+          &lt;/div&gt;
+
+        &lt;/div&gt;
+
+
+        &lt;div class&#x3D;&quot;form-group&quot;&gt;
+          &lt;label for&#x3D;&quot;columns&quot;&gt;Number of Columns&lt;/label&gt;
+          &lt;input type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control&quot; #totalolumns&#x3D;&quot;ngModel&quot; id&#x3D;&quot;totalolumns&quot; (keypress)&#x3D;&quot;numberOnly($event)&quot; [ngmodeloptions]&#x3D;&quot;{standalone: true}&quot; [(ngmodel)]&#x3D;&quot;gameOflife.columns&quot; required&#x3D;&quot;&quot;&gt;
+          &lt;div *ngif&#x3D;&quot;totalolumns.errors?.required  &amp;amp;&amp;amp; totalolumns.touched&quot; class&#x3D;&quot;alert alert-danger&quot;&gt;
+            Number of Columns is required
+          &lt;/div&gt;
+
+
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;form-group&quot;&gt;
+          &lt;label for&#x3D;&quot;columns&quot;&gt;Step Interval&lt;/label&gt;
+          &lt;input type&#x3D;&quot;text&quot; #delaybetweenframes&#x3D;&quot;ngModel&quot; class&#x3D;&quot;form-control&quot; (keypress)&#x3D;&quot;numberOnly($event)&quot; id&#x3D;&quot;delayBetweenFrames&quot; [ngmodeloptions]&#x3D;&quot;{standalone: true}&quot; [(ngmodel)]&#x3D;&quot;gameOflife.newdelayBetweenFrames&quot; required&#x3D;&quot;&quot;&gt;
+
+          &lt;div *ngif&#x3D;&quot;delayBetweenFrames.errors?.required  &amp;amp;&amp;amp; delayBetweenFrames.touched&quot; class&#x3D;&quot;alert alert-danger&quot;&gt;
+            Step Interval is required
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;button type&#x3D;&quot;submit&quot; class&#x3D;&quot;btn btn-success&quot; [disabled]&#x3D;&quot;delayBetweenFrames.errors?.required</div>
+                    <div class="col-lg-1">
+                        <div>Line: 1</div>
+                        <div>Col: 0</div>
+                    </div>
+                </div>
+                <div style="border: 1px black solid; display: flex;" class="col-lg-12">
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-2">NOTICE</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-2">WCAG2AAA.Principle3.Guideline3_3.3_3_2.G131,G89,G184,H90</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-3">Check that descriptive labels or instructions (including for required fields) are provided for user input in this form.</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-4">&lt;form id&#x3D;&quot;gameOflife&quot; name&#x3D;&quot;gameOflife&quot; #frmgameoflife&#x3D;&quot;ngForm&quot; novalidate&#x3D;&quot;&quot;&gt;
+        &lt;div class&#x3D;&quot;form-group&quot;&gt;
+          &lt;label for&#x3D;&quot;Rows&quot;&gt; Number of Rows&lt;/label&gt;
+          &lt;input type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control&quot; id&#x3D;&quot;totalrows&quot; [ngmodeloptions]&#x3D;&quot;{standalone: true}&quot; #totalrows&#x3D;&quot;ngModel&quot; (keypress)&#x3D;&quot;numberOnly($event)&quot; [(ngmodel)]&#x3D;&quot;gameOflife.rows&quot; required&#x3D;&quot;&quot;&gt;
+          &lt;div *ngif&#x3D;&quot;totalrows.errors?.required  &amp;amp;&amp;amp; totalrows.touched&quot; class&#x3D;&quot;alert alert-danger&quot;&gt;
+            Number of Rows is required
+          &lt;/div&gt;
+
+        &lt;/div&gt;
+
+
+        &lt;div class&#x3D;&quot;form-group&quot;&gt;
+          &lt;label for&#x3D;&quot;columns&quot;&gt;Number of Columns&lt;/label&gt;
+          &lt;input type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control&quot; #totalolumns&#x3D;&quot;ngModel&quot; id&#x3D;&quot;totalolumns&quot; (keypress)&#x3D;&quot;numberOnly($event)&quot; [ngmodeloptions]&#x3D;&quot;{standalone: true}&quot; [(ngmodel)]&#x3D;&quot;gameOflife.columns&quot; required&#x3D;&quot;&quot;&gt;
+          &lt;div *ngif&#x3D;&quot;totalolumns.errors?.required  &amp;amp;&amp;amp; totalolumns.touched&quot; class&#x3D;&quot;alert alert-danger&quot;&gt;
+            Number of Columns is required
+          &lt;/div&gt;
+
+
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;form-group&quot;&gt;
+          &lt;label for&#x3D;&quot;columns&quot;&gt;Step Interval&lt;/label&gt;
+          &lt;input type&#x3D;&quot;text&quot; #delaybetweenframes&#x3D;&quot;ngModel&quot; class&#x3D;&quot;form-control&quot; (keypress)&#x3D;&quot;numberOnly($event)&quot; id&#x3D;&quot;delayBetweenFrames&quot; [ngmodeloptions]&#x3D;&quot;{standalone: true}&quot; [(ngmodel)]&#x3D;&quot;gameOflife.newdelayBetweenFrames&quot; required&#x3D;&quot;&quot;&gt;
+
+          &lt;div *ngif&#x3D;&quot;delayBetweenFrames.errors?.required  &amp;amp;&amp;amp; delayBetweenFrames.touched&quot; class&#x3D;&quot;alert alert-danger&quot;&gt;
+            Step Interval is required
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;button type&#x3D;&quot;submit&quot; class&#x3D;&quot;btn btn-success&quot; [disabled]&#x3D;&quot;delayBetweenFrames.errors?.required</div>
+                    <div class="col-lg-1">
+                        <div>Line: 1</div>
+                        <div>Col: 0</div>
+                    </div>
+                </div>
+                <div style="border: 1px black solid; display: flex;" class="col-lg-12">
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-2">NOTICE</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-2">WCAG2AAA.Principle3.Guideline3_3.3_3_3.G177</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-3">Check that this form provides suggested corrections to errors in user input, unless it would jeopardize the security or purpose of the content.</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-4">&lt;form id&#x3D;&quot;gameOflife&quot; name&#x3D;&quot;gameOflife&quot; #frmgameoflife&#x3D;&quot;ngForm&quot; novalidate&#x3D;&quot;&quot;&gt;
+        &lt;div class&#x3D;&quot;form-group&quot;&gt;
+          &lt;label for&#x3D;&quot;Rows&quot;&gt; Number of Rows&lt;/label&gt;
+          &lt;input type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control&quot; id&#x3D;&quot;totalrows&quot; [ngmodeloptions]&#x3D;&quot;{standalone: true}&quot; #totalrows&#x3D;&quot;ngModel&quot; (keypress)&#x3D;&quot;numberOnly($event)&quot; [(ngmodel)]&#x3D;&quot;gameOflife.rows&quot; required&#x3D;&quot;&quot;&gt;
+          &lt;div *ngif&#x3D;&quot;totalrows.errors?.required  &amp;amp;&amp;amp; totalrows.touched&quot; class&#x3D;&quot;alert alert-danger&quot;&gt;
+            Number of Rows is required
+          &lt;/div&gt;
+
+        &lt;/div&gt;
+
+
+        &lt;div class&#x3D;&quot;form-group&quot;&gt;
+          &lt;label for&#x3D;&quot;columns&quot;&gt;Number of Columns&lt;/label&gt;
+          &lt;input type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control&quot; #totalolumns&#x3D;&quot;ngModel&quot; id&#x3D;&quot;totalolumns&quot; (keypress)&#x3D;&quot;numberOnly($event)&quot; [ngmodeloptions]&#x3D;&quot;{standalone: true}&quot; [(ngmodel)]&#x3D;&quot;gameOflife.columns&quot; required&#x3D;&quot;&quot;&gt;
+          &lt;div *ngif&#x3D;&quot;totalolumns.errors?.required  &amp;amp;&amp;amp; totalolumns.touched&quot; class&#x3D;&quot;alert alert-danger&quot;&gt;
+            Number of Columns is required
+          &lt;/div&gt;
+
+
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;form-group&quot;&gt;
+          &lt;label for&#x3D;&quot;columns&quot;&gt;Step Interval&lt;/label&gt;
+          &lt;input type&#x3D;&quot;text&quot; #delaybetweenframes&#x3D;&quot;ngModel&quot; class&#x3D;&quot;form-control&quot; (keypress)&#x3D;&quot;numberOnly($event)&quot; id&#x3D;&quot;delayBetweenFrames&quot; [ngmodeloptions]&#x3D;&quot;{standalone: true}&quot; [(ngmodel)]&#x3D;&quot;gameOflife.newdelayBetweenFrames&quot; required&#x3D;&quot;&quot;&gt;
+
+          &lt;div *ngif&#x3D;&quot;delayBetweenFrames.errors?.required  &amp;amp;&amp;amp; delayBetweenFrames.touched&quot; class&#x3D;&quot;alert alert-danger&quot;&gt;
+            Step Interval is required
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;button type&#x3D;&quot;submit&quot; class&#x3D;&quot;btn btn-success&quot; [disabled]&#x3D;&quot;delayBetweenFrames.errors?.required</div>
+                    <div class="col-lg-1">
+                        <div>Line: 1</div>
+                        <div>Col: 0</div>
+                    </div>
+                </div>
+                <div style="border: 1px black solid; display: flex;" class="col-lg-12">
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-2">NOTICE</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-2">WCAG2AAA.Principle3.Guideline3_3.3_3_5.G71,G184,G193</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-3">Check that context-sensitive help is available for this form, at a Web-page and/or control level.</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-4">&lt;form id&#x3D;&quot;gameOflife&quot; name&#x3D;&quot;gameOflife&quot; #frmgameoflife&#x3D;&quot;ngForm&quot; novalidate&#x3D;&quot;&quot;&gt;
+        &lt;div class&#x3D;&quot;form-group&quot;&gt;
+          &lt;label for&#x3D;&quot;Rows&quot;&gt; Number of Rows&lt;/label&gt;
+          &lt;input type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control&quot; id&#x3D;&quot;totalrows&quot; [ngmodeloptions]&#x3D;&quot;{standalone: true}&quot; #totalrows&#x3D;&quot;ngModel&quot; (keypress)&#x3D;&quot;numberOnly($event)&quot; [(ngmodel)]&#x3D;&quot;gameOflife.rows&quot; required&#x3D;&quot;&quot;&gt;
+          &lt;div *ngif&#x3D;&quot;totalrows.errors?.required  &amp;amp;&amp;amp; totalrows.touched&quot; class&#x3D;&quot;alert alert-danger&quot;&gt;
+            Number of Rows is required
+          &lt;/div&gt;
+
+        &lt;/div&gt;
+
+
+        &lt;div class&#x3D;&quot;form-group&quot;&gt;
+          &lt;label for&#x3D;&quot;columns&quot;&gt;Number of Columns&lt;/label&gt;
+          &lt;input type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control&quot; #totalolumns&#x3D;&quot;ngModel&quot; id&#x3D;&quot;totalolumns&quot; (keypress)&#x3D;&quot;numberOnly($event)&quot; [ngmodeloptions]&#x3D;&quot;{standalone: true}&quot; [(ngmodel)]&#x3D;&quot;gameOflife.columns&quot; required&#x3D;&quot;&quot;&gt;
+          &lt;div *ngif&#x3D;&quot;totalolumns.errors?.required  &amp;amp;&amp;amp; totalolumns.touched&quot; class&#x3D;&quot;alert alert-danger&quot;&gt;
+            Number of Columns is required
+          &lt;/div&gt;
+
+
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;form-group&quot;&gt;
+          &lt;label for&#x3D;&quot;columns&quot;&gt;Step Interval&lt;/label&gt;
+          &lt;input type&#x3D;&quot;text&quot; #delaybetweenframes&#x3D;&quot;ngModel&quot; class&#x3D;&quot;form-control&quot; (keypress)&#x3D;&quot;numberOnly($event)&quot; id&#x3D;&quot;delayBetweenFrames&quot; [ngmodeloptions]&#x3D;&quot;{standalone: true}&quot; [(ngmodel)]&#x3D;&quot;gameOflife.newdelayBetweenFrames&quot; required&#x3D;&quot;&quot;&gt;
+
+          &lt;div *ngif&#x3D;&quot;delayBetweenFrames.errors?.required  &amp;amp;&amp;amp; delayBetweenFrames.touched&quot; class&#x3D;&quot;alert alert-danger&quot;&gt;
+            Step Interval is required
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;button type&#x3D;&quot;submit&quot; class&#x3D;&quot;btn btn-success&quot; [disabled]&#x3D;&quot;delayBetweenFrames.errors?.required</div>
+                    <div class="col-lg-1">
+                        <div>Line: 1</div>
+                        <div>Col: 0</div>
+                    </div>
+                </div>
+                <div style="border: 1px black solid; display: flex;" class="col-lg-12">
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-2">NOTICE</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-2">WCAG2AAA.Principle3.Guideline3_3.3_3_6.G98,G99,G155,G164,G168.AllForms</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-3">Check that submissions to this form are either reversible, checked for input errors, and/or confirmed by the user.</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-4">&lt;form id&#x3D;&quot;gameOflife&quot; name&#x3D;&quot;gameOflife&quot; #frmgameoflife&#x3D;&quot;ngForm&quot; novalidate&#x3D;&quot;&quot;&gt;
+        &lt;div class&#x3D;&quot;form-group&quot;&gt;
+          &lt;label for&#x3D;&quot;Rows&quot;&gt; Number of Rows&lt;/label&gt;
+          &lt;input type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control&quot; id&#x3D;&quot;totalrows&quot; [ngmodeloptions]&#x3D;&quot;{standalone: true}&quot; #totalrows&#x3D;&quot;ngModel&quot; (keypress)&#x3D;&quot;numberOnly($event)&quot; [(ngmodel)]&#x3D;&quot;gameOflife.rows&quot; required&#x3D;&quot;&quot;&gt;
+          &lt;div *ngif&#x3D;&quot;totalrows.errors?.required  &amp;amp;&amp;amp; totalrows.touched&quot; class&#x3D;&quot;alert alert-danger&quot;&gt;
+            Number of Rows is required
+          &lt;/div&gt;
+
+        &lt;/div&gt;
+
+
+        &lt;div class&#x3D;&quot;form-group&quot;&gt;
+          &lt;label for&#x3D;&quot;columns&quot;&gt;Number of Columns&lt;/label&gt;
+          &lt;input type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control&quot; #totalolumns&#x3D;&quot;ngModel&quot; id&#x3D;&quot;totalolumns&quot; (keypress)&#x3D;&quot;numberOnly($event)&quot; [ngmodeloptions]&#x3D;&quot;{standalone: true}&quot; [(ngmodel)]&#x3D;&quot;gameOflife.columns&quot; required&#x3D;&quot;&quot;&gt;
+          &lt;div *ngif&#x3D;&quot;totalolumns.errors?.required  &amp;amp;&amp;amp; totalolumns.touched&quot; class&#x3D;&quot;alert alert-danger&quot;&gt;
+            Number of Columns is required
+          &lt;/div&gt;
+
+
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;form-group&quot;&gt;
+          &lt;label for&#x3D;&quot;columns&quot;&gt;Step Interval&lt;/label&gt;
+          &lt;input type&#x3D;&quot;text&quot; #delaybetweenframes&#x3D;&quot;ngModel&quot; class&#x3D;&quot;form-control&quot; (keypress)&#x3D;&quot;numberOnly($event)&quot; id&#x3D;&quot;delayBetweenFrames&quot; [ngmodeloptions]&#x3D;&quot;{standalone: true}&quot; [(ngmodel)]&#x3D;&quot;gameOflife.newdelayBetweenFrames&quot; required&#x3D;&quot;&quot;&gt;
+
+          &lt;div *ngif&#x3D;&quot;delayBetweenFrames.errors?.required  &amp;amp;&amp;amp; delayBetweenFrames.touched&quot; class&#x3D;&quot;alert alert-danger&quot;&gt;
+            Step Interval is required
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;button type&#x3D;&quot;submit&quot; class&#x3D;&quot;btn btn-success&quot; [disabled]&#x3D;&quot;delayBetweenFrames.errors?.required</div>
+                    <div class="col-lg-1">
+                        <div>Line: 1</div>
+                        <div>Col: 0</div>
+                    </div>
+                </div>
+                <div style="border: 1px black solid; display: flex;" class="col-lg-12">
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-2">WARNING</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-2">WCAG2AAA.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-3">This label&#x27;s &quot;for&quot; attribute contains an ID that does not exist in the document fragment.</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-4">&lt;label for&#x3D;&quot;Rows&quot;&gt; Number of Rows&lt;/label&gt;</div>
+                    <div class="col-lg-1">
+                        <div>Line: 57</div>
+                        <div>Col: 10</div>
+                    </div>
+                </div>
+                <div style="border: 1px black solid; display: flex;" class="col-lg-12">
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-2">WARNING</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-2">WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.BgImage</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-3">This element&#x27;s text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 7:1.</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-4">&lt;label for&#x3D;&quot;Rows&quot;&gt; Number of Rows&lt;/label&gt;</div>
+                    <div class="col-lg-1">
+                        <div>Line: 57</div>
+                        <div>Col: 10</div>
+                    </div>
+                </div>
+                <div style="border: 1px black solid; display: flex;" class="col-lg-12">
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-2">ERROR</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-2">WCAG2AAA.Principle4.Guideline4_1.4_1_2.H91.InputText.Name</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-3">This text input element does not have a name available to an accessibility API. Valid names are: label element, title attribute, aria-label attribute, aria-labelledby attribute.</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-4">&lt;input type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control&quot; id&#x3D;&quot;totalrows&quot; [ngmodeloptions]&#x3D;&quot;{standalone: true}&quot; #totalrows&#x3D;&quot;ngModel&quot; (keypress)&#x3D;&quot;numberOnly($event)&quot; [(ngmodel)]&#x3D;&quot;gameOflife.rows&quot; required&#x3D;&quot;&quot;&gt;</div>
+                    <div class="col-lg-1">
+                        <div>Line: 1</div>
+                        <div>Col: 0</div>
+                    </div>
+                </div>
+                <div style="border: 1px black solid; display: flex;" class="col-lg-12">
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-2">ERROR</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-2">WCAG2AAA.Principle1.Guideline1_3.1_3_1.F68</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-3">This form field should be labelled in some way. Use the label element (either with a &quot;for&quot; attribute or wrapped around the form field), or &quot;title&quot;, &quot;aria-label&quot; or &quot;aria-labelledby&quot; attributes as appropriate.</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-4">&lt;input type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control&quot; id&#x3D;&quot;totalrows&quot; [ngmodeloptions]&#x3D;&quot;{standalone: true}&quot; #totalrows&#x3D;&quot;ngModel&quot; (keypress)&#x3D;&quot;numberOnly($event)&quot; [(ngmodel)]&#x3D;&quot;gameOflife.rows&quot; required&#x3D;&quot;&quot;&gt;</div>
+                    <div class="col-lg-1">
+                        <div>Line: 1</div>
+                        <div>Col: 0</div>
+                    </div>
+                </div>
+                <div style="border: 1px black solid; display: flex;" class="col-lg-12">
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-2">NOTICE</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-2">WCAG2AAA.Principle3.Guideline3_2.3_2_1.G107</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-3">Check that a change of context does not occur when this input field receives focus.</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-4">&lt;input type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control&quot; id&#x3D;&quot;totalrows&quot; [ngmodeloptions]&#x3D;&quot;{standalone: true}&quot; #totalrows&#x3D;&quot;ngModel&quot; (keypress)&#x3D;&quot;numberOnly($event)&quot; [(ngmodel)]&#x3D;&quot;gameOflife.rows&quot; required&#x3D;&quot;&quot;&gt;</div>
+                    <div class="col-lg-1">
+                        <div>Line: 1</div>
+                        <div>Col: 0</div>
+                    </div>
+                </div>
+                <div style="border: 1px black solid; display: flex;" class="col-lg-12">
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-2">WARNING</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-2">WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.BgImage</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-3">This element&#x27;s text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 7:1.</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-4">&lt;div *ngif&#x3D;&quot;totalrows.errors?.required  &amp;amp;&amp;amp; totalrows.touched&quot; class&#x3D;&quot;alert alert-danger&quot;&gt;
+            Number of Rows is required
+          &lt;/div&gt;</div>
+                    <div class="col-lg-1">
+                        <div>Line: 1</div>
+                        <div>Col: 0</div>
+                    </div>
+                </div>
+                <div style="border: 1px black solid; display: flex;" class="col-lg-12">
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-2">WARNING</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-2">WCAG2AAA.Principle1.Guideline1_3.1_3_1.H44.NonExistentFragment</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-3">This label&#x27;s &quot;for&quot; attribute contains an ID that does not exist in the document fragment.</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-4">&lt;label for&#x3D;&quot;columns&quot;&gt;Number of Columns&lt;/label&gt;</div>
+                    <div class="col-lg-1">
+                        <div>Line: 68</div>
+                        <div>Col: 10</div>
+                    </div>
+                </div>
+                <div style="border: 1px black solid; display: flex;" class="col-lg-12">
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-2">WARNING</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-2">WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.BgImage</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-3">This element&#x27;s text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 7:1.</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-4">&lt;label for&#x3D;&quot;columns&quot;&gt;Number of Columns&lt;/label&gt;</div>
+                    <div class="col-lg-1">
+                        <div>Line: 68</div>
+                        <div>Col: 10</div>
+                    </div>
+                </div>
+                <div style="border: 1px black solid; display: flex;" class="col-lg-12">
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-2">ERROR</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-2">WCAG2AAA.Principle4.Guideline4_1.4_1_2.H91.InputText.Name</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-3">This text input element does not have a name available to an accessibility API. Valid names are: label element, title attribute, aria-label attribute, aria-labelledby attribute.</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-4">&lt;input type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control&quot; #totalolumns&#x3D;&quot;ngModel&quot; id&#x3D;&quot;totalolumns&quot; (keypress)&#x3D;&quot;numberOnly($event)&quot; [ngmodeloptions]&#x3D;&quot;{standalone: true}&quot; [(ngmodel)]&#x3D;&quot;gameOflife.columns&quot; required&#x3D;&quot;&quot;&gt;</div>
+                    <div class="col-lg-1">
+                        <div>Line: 1</div>
+                        <div>Col: 0</div>
+                    </div>
+                </div>
+                <div style="border: 1px black solid; display: flex;" class="col-lg-12">
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-2">ERROR</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-2">WCAG2AAA.Principle1.Guideline1_3.1_3_1.F68</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-3">This form field should be labelled in some way. Use the label element (either with a &quot;for&quot; attribute or wrapped around the form field), or &quot;title&quot;, &quot;aria-label&quot; or &quot;aria-labelledby&quot; attributes as appropriate.</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-4">&lt;input type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control&quot; #totalolumns&#x3D;&quot;ngModel&quot; id&#x3D;&quot;totalolumns&quot; (keypress)&#x3D;&quot;numberOnly($event)&quot; [ngmodeloptions]&#x3D;&quot;{standalone: true}&quot; [(ngmodel)]&#x3D;&quot;gameOflife.columns&quot; required&#x3D;&quot;&quot;&gt;</div>
+                    <div class="col-lg-1">
+                        <div>Line: 1</div>
+                        <div>Col: 0</div>
+                    </div>
+                </div>
+                <div style="border: 1px black solid; display: flex;" class="col-lg-12">
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-2">NOTICE</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-2">WCAG2AAA.Principle3.Guideline3_2.3_2_1.G107</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-3">Check that a change of context does not occur when this input field receives focus.</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-4">&lt;input type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control&quot; #totalolumns&#x3D;&quot;ngModel&quot; id&#x3D;&quot;totalolumns&quot; (keypress)&#x3D;&quot;numberOnly($event)&quot; [ngmodeloptions]&#x3D;&quot;{standalone: true}&quot; [(ngmodel)]&#x3D;&quot;gameOflife.columns&quot; required&#x3D;&quot;&quot;&gt;</div>
+                    <div class="col-lg-1">
+                        <div>Line: 1</div>
+                        <div>Col: 0</div>
+                    </div>
+                </div>
+                <div style="border: 1px black solid; display: flex;" class="col-lg-12">
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-2">WARNING</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-2">WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.BgImage</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-3">This element&#x27;s text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 7:1.</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-4">&lt;div *ngif&#x3D;&quot;totalolumns.errors?.required  &amp;amp;&amp;amp; totalolumns.touched&quot; class&#x3D;&quot;alert alert-danger&quot;&gt;
+            Number of Columns is required
+          &lt;/div&gt;</div>
+                    <div class="col-lg-1">
+                        <div>Line: 1</div>
+                        <div>Col: 0</div>
+                    </div>
+                </div>
+                <div style="border: 1px black solid; display: flex;" class="col-lg-12">
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-2">WARNING</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-2">WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.BgImage</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-3">This element&#x27;s text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 7:1.</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-4">&lt;label for&#x3D;&quot;columns&quot;&gt;Step Interval&lt;/label&gt;</div>
+                    <div class="col-lg-1">
+                        <div>Line: 79</div>
+                        <div>Col: 10</div>
+                    </div>
+                </div>
+                <div style="border: 1px black solid; display: flex;" class="col-lg-12">
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-2">ERROR</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-2">WCAG2AAA.Principle4.Guideline4_1.4_1_2.H91.InputText.Name</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-3">This text input element does not have a name available to an accessibility API. Valid names are: label element, title attribute, aria-label attribute, aria-labelledby attribute.</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-4">&lt;input type&#x3D;&quot;text&quot; #delaybetweenframes&#x3D;&quot;ngModel&quot; class&#x3D;&quot;form-control&quot; (keypress)&#x3D;&quot;numberOnly($event)&quot; id&#x3D;&quot;delayBetweenFrames&quot; [ngmodeloptions]&#x3D;&quot;{standalone: true}&quot; [(ngmodel)]&#x3D;&quot;gameOflife.newdelayBetweenFrames&quot; required&#x3D;&quot;&quot;&gt;</div>
+                    <div class="col-lg-1">
+                        <div>Line: 1</div>
+                        <div>Col: 0</div>
+                    </div>
+                </div>
+                <div style="border: 1px black solid; display: flex;" class="col-lg-12">
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-2">ERROR</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-2">WCAG2AAA.Principle1.Guideline1_3.1_3_1.F68</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-3">This form field should be labelled in some way. Use the label element (either with a &quot;for&quot; attribute or wrapped around the form field), or &quot;title&quot;, &quot;aria-label&quot; or &quot;aria-labelledby&quot; attributes as appropriate.</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-4">&lt;input type&#x3D;&quot;text&quot; #delaybetweenframes&#x3D;&quot;ngModel&quot; class&#x3D;&quot;form-control&quot; (keypress)&#x3D;&quot;numberOnly($event)&quot; id&#x3D;&quot;delayBetweenFrames&quot; [ngmodeloptions]&#x3D;&quot;{standalone: true}&quot; [(ngmodel)]&#x3D;&quot;gameOflife.newdelayBetweenFrames&quot; required&#x3D;&quot;&quot;&gt;</div>
+                    <div class="col-lg-1">
+                        <div>Line: 1</div>
+                        <div>Col: 0</div>
+                    </div>
+                </div>
+                <div style="border: 1px black solid; display: flex;" class="col-lg-12">
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-2">NOTICE</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-2">WCAG2AAA.Principle3.Guideline3_2.3_2_1.G107</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-3">Check that a change of context does not occur when this input field receives focus.</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-4">&lt;input type&#x3D;&quot;text&quot; #delaybetweenframes&#x3D;&quot;ngModel&quot; class&#x3D;&quot;form-control&quot; (keypress)&#x3D;&quot;numberOnly($event)&quot; id&#x3D;&quot;delayBetweenFrames&quot; [ngmodeloptions]&#x3D;&quot;{standalone: true}&quot; [(ngmodel)]&#x3D;&quot;gameOflife.newdelayBetweenFrames&quot; required&#x3D;&quot;&quot;&gt;</div>
+                    <div class="col-lg-1">
+                        <div>Line: 1</div>
+                        <div>Col: 0</div>
+                    </div>
+                </div>
+                <div style="border: 1px black solid; display: flex;" class="col-lg-12">
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-2">WARNING</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-2">WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.BgImage</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-3">This element&#x27;s text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 7:1.</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-4">&lt;div *ngif&#x3D;&quot;delayBetweenFrames.errors?.required  &amp;amp;&amp;amp; delayBetweenFrames.touched&quot; class&#x3D;&quot;alert alert-danger&quot;&gt;
+            Step Interval is required
+          &lt;/div&gt;</div>
+                    <div class="col-lg-1">
+                        <div>Line: 1</div>
+                        <div>Col: 0</div>
+                    </div>
+                </div>
+                <div style="border: 1px black solid; display: flex;" class="col-lg-12">
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-2">WARNING</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-2">WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.BgImage</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-3">This element&#x27;s text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 7:1.</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-4">&lt;button type&#x3D;&quot;submit&quot; class&#x3D;&quot;btn btn-success&quot; [disabled]&#x3D;&quot;delayBetweenFrames.errors?.required</div>
+                    <div class="col-lg-1">
+                        <div>Line: 1</div>
+                        <div>Col: 0</div>
+                    </div>
+                </div>
+                <div style="border: 1px black solid; display: flex;" class="col-lg-12">
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-2">NOTICE</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-2">WCAG2AAA.Principle3.Guideline3_2.3_2_1.G107</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-3">Check that a change of context does not occur when this input field receives focus.</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-4">&lt;button type&#x3D;&quot;submit&quot; class&#x3D;&quot;btn btn-success&quot; [disabled]&#x3D;&quot;delayBetweenFrames.errors?.required</div>
+                    <div class="col-lg-1">
+                        <div>Line: 1</div>
+                        <div>Col: 0</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="row error-div">
+                <span class="col-lg-1">6</span>
+                <span class="col-lg-7">F:/TCS Test/-GameofLife/src/assets/mock/test-resource.html</span>
+                <span class="col-lg-1">0</span>
+                <span class="col-lg-1">1</span>
+                <span class="col-lg-1">1</span>
+                <span class="col-lg-1"><button id="button6" onclick="expandTable(6)">Expand</button></span>
+            </div>
+            <div id="detail6" class="col-lg-12" style="display: none">
+                <div>
+                    <div class="col-lg-2"><strong>Severity</strong></div>
+                    <div class="col-lg-2"><strong>Issue</strong></div>
+                    <div class="col-lg-3"><strong>Description</strong></div>
+                    <div class="col-lg-4"><strong>Element</strong></div>
+                    <div class="col-lg-1"><strong>Pos</strong></div>
+                </div>
+                <br>
+                <div style="border: 1px black solid; display: flex;" class="col-lg-12">
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-2">WARNING</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-2">WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.BgImage</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-3">This element&#x27;s text is placed on a background image. Ensure the contrast ratio between the text and all covered parts of the image are at least 7:1.</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-4">&lt;a href&#x3D;&quot;#&quot;&gt;some text&lt;/a&gt;</div>
+                    <div class="col-lg-1">
+                        <div>Line: 1</div>
+                        <div>Col: 12</div>
+                    </div>
+                </div>
+                <div style="border: 1px black solid; display: flex;" class="col-lg-12">
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-2">NOTICE</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-2">WCAG2AAA.Principle2.Guideline2_4.2_4_9.H30</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-3">Check that text of the link describes the purpose of the link.</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-4">&lt;a href&#x3D;&quot;#&quot;&gt;some text&lt;/a&gt;</div>
+                    <div class="col-lg-1">
+                        <div>Line: 1</div>
+                        <div>Col: 12</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="row error-div">
+                <span class="col-lg-1">7</span>
+                <span class="col-lg-7">F:/TCS Test/-GameofLife/src/index.html</span>
+                <span class="col-lg-1">0</span>
+                <span class="col-lg-1">0</span>
+                <span class="col-lg-1">1</span>
+                <span class="col-lg-1"><button id="button7" onclick="expandTable(7)">Expand</button></span>
+            </div>
+            <div id="detail7" class="col-lg-12" style="display: none">
+                <div>
+                    <div class="col-lg-2"><strong>Severity</strong></div>
+                    <div class="col-lg-2"><strong>Issue</strong></div>
+                    <div class="col-lg-3"><strong>Description</strong></div>
+                    <div class="col-lg-4"><strong>Element</strong></div>
+                    <div class="col-lg-1"><strong>Pos</strong></div>
+                </div>
+                <br>
+                <div style="border: 1px black solid; display: flex;" class="col-lg-12">
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-2">NOTICE</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-2">WCAG2AAA.Principle2.Guideline2_4.2_4_2.H25.2</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box" class="col-lg-3">Check that the title element describes the document.</div>
+                    <div style="border-right: 1px black solid; display: -webkit-inline-box; overflow-x: scroll;" class="col-lg-4">&lt;title&gt;Angular-6-Starter&lt;/title&gt;</div>
+                    <div class="col-lg-1">
+                        <div>Line: 5</div>
+                        <div>Col: 2</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="position: fixed;right: 10px;bottom: 10px">
+            <button class="btn btn-primary" onclick="scrollToTop()" style="">Scroll top</button>
+        </div>
+    </div>
+</body>
+
+<script>
+    function expandTable(id) {
+        let element = document.getElementById('detail'+id);
+        element.style.display = (element.style.display === 'none') ? 'block' : 'none';
+        document.getElementById('button'+id).textContent = (document.getElementById('button'+id).textContent === 'Expand') ?
+            'Collapse' : 'Expand';
+    }
+
+    function scrollToTop() {
+        window.scrollTo(0, 0);
+    }
+
+</script>
+
+</html>

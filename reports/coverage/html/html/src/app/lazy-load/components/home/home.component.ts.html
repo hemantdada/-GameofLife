@@ -1,0 +1,410 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src\app\lazy-load\components\home\home.component.ts</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../../../prettify.css" />
+    <link rel="stylesheet" href="../../../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../../../index.html">all files</a> / <a href="index.html">src/app/lazy-load/components/home/</a> home.component.ts
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">29.41% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>20/68</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/19</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">7.14% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>1/14</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">27.69% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>18/65</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { Component, OnInit } from '@angular/core';
+import { MyGrid } from '../../../shared/model/mygrid/my-grid';
+import { GameOflife } from '../../../shared/model/game-of-life/game-of-life';
+import { Creater } from '../../../shared/common/creater';
+&nbsp;
+@Component({
+  selector: 'app-root',
+  templateUrl: './home.component.html',
+  styleUrls: ['./home.component.css']
+})
+&nbsp;
+export class HomeComponent implements OnInit {
+&nbsp;
+  public <span class="cstat-no" title="statement not covered" >gameOflife: GameOflife = new GameOflife();</span>
+  public creater: Creater;
+<span class="fstat-no" title="function not covered" >  constructor() {</span>
+<span class="cstat-no" title="statement not covered" >    this.creater = new Creater();</span>
+  }
+&nbsp;
+<span class="fstat-no" title="function not covered" >  public ngOnInit(): void {</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    this.gameOflife.currentState = 1;</span>
+<span class="cstat-no" title="statement not covered" >    this.gameOflife.mygrid = new MyGrid(this.gameOflife.rows, this.gameOflife.columns);</span>
+<span class="cstat-no" title="statement not covered" >    this.creater.initShapeType(this.gameOflife.patterns, this.gameOflife.mygrid);</span>
+<span class="cstat-no" title="statement not covered" >    this.start(this.gameOflife.currentState);</span>
+  }
+&nbsp;
+<span class="fstat-no" title="function not covered" >  public Update(): void {</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    this.gameOflife.currentState = 0;</span>
+<span class="cstat-no" title="statement not covered" >    this.gameOflife.mygrid = undefined;</span>
+<span class="cstat-no" title="statement not covered" >    this.gameOflife.delayBetweenFrames = this.gameOflife.newdelayBetweenFrames;</span>
+<span class="cstat-no" title="statement not covered" >    this.gameOflife.mygrid = new MyGrid(Number(this.gameOflife.rows), Number(this.gameOflife.columns));</span>
+<span class="cstat-no" title="statement not covered" >    this.gameOflife.currentState = 1;</span>
+<span class="cstat-no" title="statement not covered" >    this.start(this.gameOflife.currentState);</span>
+  }
+&nbsp;
+<span class="fstat-no" title="function not covered" >  public selectPattern(): void {</span>
+<span class="cstat-no" title="statement not covered" >    this.gameOflife.currentState = 0;</span>
+<span class="cstat-no" title="statement not covered" >    this.gameOflife.mygrid = new MyGrid(Number(this.gameOflife.rows), Number(this.gameOflife.columns));</span>
+  }
+<span class="fstat-no" title="function not covered" > public StartSelectedPattern(): void {</span>
+<span class="cstat-no" title="statement not covered" >  this.gameOflife.currentState = 1;</span>
+<span class="cstat-no" title="statement not covered" >  this.start(this.gameOflife.currentState);</span>
+ }
+<span class="fstat-no" title="function not covered" > public SavePattern(rowindex: any, colindex: any)</span>: void {
+<span class="cstat-no" title="statement not covered" >  if (this.gameOflife.mygrid.myarray[rowindex][colindex] === 0) {</span>
+<span class="cstat-no" title="statement not covered" >    this.gameOflife.mygrid.myarray[rowindex][colindex] = 1;</span>
+  } else {
+<span class="cstat-no" title="statement not covered" >    this.gameOflife.mygrid.myarray[rowindex][colindex] = 0;</span>
+  }
+ }
+&nbsp;
+<span class="fstat-no" title="function not covered" >  public StartClick(): void {</span>
+<span class="cstat-no" title="statement not covered" >    this.gameOflife.currentState = 1;</span>
+<span class="cstat-no" title="statement not covered" >    this.start(this.gameOflife.currentState);</span>
+  }
+&nbsp;
+<span class="fstat-no" title="function not covered" >  public Stopclick(): void {</span>
+<span class="cstat-no" title="statement not covered" >    this.gameOflife.currentState = 0;</span>
+  }
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >  public start(state: number)</span>: void {</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    this.gameOflife.mygrid = this.updateGridWithGameRules();</span>
+<span class="cstat-no" title="statement not covered" >    if (state !== 0) {</span>
+<span class="cstat-no" title="statement not covered" >      setTimeout(<span class="fstat-no" title="function not covered" >() =&gt; {</span></span>
+<span class="cstat-no" title="statement not covered" >        this.start(this.gameOflife.currentState);</span>
+      }, this.gameOflife.delayBetweenFrames);
+    }
+  }
+&nbsp;
+<span class="fstat-no" title="function not covered" >  public numberOnly(event: any)</span>: boolean {
+<span class="cstat-no" title="statement not covered" >     const charCode: any = (event.which) ? event.which : event.keyCode;</span>
+<span class="cstat-no" title="statement not covered" >    if (charCode &gt; 31 &amp;&amp; (charCode &lt; 48 || charCode &gt; 57)) {</span>
+<span class="cstat-no" title="statement not covered" >      return false;</span>
+    }
+<span class="cstat-no" title="statement not covered" >    return true;</span>
+&nbsp;
+  }
+<span class="fstat-no" title="function not covered" >  public LoadPattern(): void {</span>
+<span class="cstat-no" title="statement not covered" >    this.gameOflife.currentState = 1;</span>
+<span class="cstat-no" title="statement not covered" >    if (Number(this.gameOflife.patterns) === 0 &amp;&amp;</span>
+      this.gameOflife.mygrid.getColumn().length &lt; 50 &amp;&amp; this.gameOflife.mygrid.getRows().length &lt; 50) {
+<span class="cstat-no" title="statement not covered" >      this.gameOflife.mygrid = new MyGrid(50, 50);</span>
+    }
+<span class="cstat-no" title="statement not covered" >    this.gameOflife.mygrid = new MyGrid(Number(this.gameOflife.rows), Number(this.gameOflife.columns));</span>
+<span class="cstat-no" title="statement not covered" >    this.creater.initShapeType(Number(this.gameOflife.patterns), this.gameOflife.mygrid);</span>
+<span class="cstat-no" title="statement not covered" >    this.start(this.gameOflife.currentState);</span>
+  }
+&nbsp;
+<span class="fstat-no" title="function not covered" >  public updateGridWithGameRules(): MyGrid {</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    const copyGrid: MyGrid = new MyGrid(this.gameOflife.mygrid.getRows().length, this.gameOflife.mygrid.getColumn().length);</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    for (let row: any = 0; row &lt; this.gameOflife.mygrid.getRows().length - 1; row++) {</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >      for (let column: any = 0; column &lt; this.gameOflife.mygrid.getColumn().length - 1; column++) {</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        const totalCells: any = this.gameOflife.mygrid.checkSurroundingsCells(row, column);</span>
+<span class="cstat-no" title="statement not covered" >        switch (totalCells) {</span>
+          case 2:
+<span class="cstat-no" title="statement not covered" >            copyGrid.myarray[row][column] = this.gameOflife.mygrid.myarray[row][column];</span>
+<span class="cstat-no" title="statement not covered" >            break;</span>
+          case 3:
+<span class="cstat-no" title="statement not covered" >            copyGrid.myarray[row][column] = 1;</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >            break;</span>
+          default:
+<span class="cstat-no" title="statement not covered" >            copyGrid.myarray[row][column] = 0;</span>
+        }
+      }
+    }
+<span class="cstat-no" title="statement not covered" >    return copyGrid;</span>
+  }
+}
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Wed Jun 26 2019 08:06:25 GMT+0530 (GMT+05:30)
+</div>
+</div>
+<script src="../../../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../../../sorter.js"></script>
+</body>
+</html>
