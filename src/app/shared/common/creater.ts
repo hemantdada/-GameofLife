@@ -69,9 +69,9 @@ export class Creater {
   private setRandom(grid: MyGrid): MyGrid {
     grid._build();
 
-    for (let row:any = 0; row < grid.getRows().length; row++) {
+    for (let row: any = 0; row < grid.getRows().length; row++) {
 
-      for (let column:any = 0; column < grid.getColumn().length; column++) {
+      for (let column: any = 0; column < grid.getColumn().length; column++) {
         grid.myarray[row][column] = Math.round(Math.random());
       }
     }
